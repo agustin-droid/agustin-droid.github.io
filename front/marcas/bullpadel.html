@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullpadel</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="bull.css">
+
+</head>
+<body>
+    <h1>Paletas Bullpadel
+        <h3 style="text-align: center;">(ordenadas por precio)</h3>
+    </h1>
+    <div id="productos-container"></div>
+    
+    
+
+    <script src="../../back/productosBull.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            mostrarProductos("Bullpadel");
+        });
+    </script>
+    <!-- Modal para ampliar imágenes -->
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+
+</body>
+</html>
+

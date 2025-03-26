@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+
+
+.fondo {
+    background-image: url('fondo1.jpeg'); /* Asegúrate de que la ruta es correcta */
+    background-size: cover; /* La imagen cubrirá toda la pantalla */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repeticiones */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Barra de navegación */
+.barra-marcas {
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.barra-marcas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.barra-marcas li {
+    display: inline;
+}
+
+.barra-marcas a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.barra-marcas a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Ajuste para evitar que la barra cubra el contenido */
+.fondo {
+    padding-top: 60px; /* Agrega espacio para que no se superponga con la barra */
+}
+.navbar {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px; /* Ajusta el tamaño */
+    font-weight: 700; /* Negrita para más impacto */
+    text-transform: uppercase; /* Mayúsculas para más agresividad */
+    letter-spacing: 1px; /* Espaciado para más presencia */
+    color: white; /* Asegurar buena visibilidad */
+}
+/* Mensaje pequeño sobre el footer */
+.mensaje-footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo del footer con botones bien distribuidos */
+footer {
+    display: flex;
+    justify-content: space-around; /* Distribuye los botones de manera uniforme */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo de los enlaces del footer */
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px 20px; /* Añade espacio alrededor de los enlaces */
+}
+
+/* Cambio de color al pasar el mouse */
+footer a:hover {
+    color: #ffcc00;
+}
+.imagen-producto {
+    width: 33% !important;
+    height: auto !important;
+}
