@@ -1,33 +1,78 @@
 document.addEventListener("DOMContentLoaded", function () {
     const productosNox = [
         {
-            id: 1,
+            id: 100,
             marca: "Nox",
-            nombre: "Nox AT10 Genius 18K",
-            precio: 420000,
+            nombre: "Nox ML10 Pro Cup Rough Surface 23",
+            precio: 200000,
             tipo: "Control",
-            materiales: ["Carbono 18K", "HR3 Core"],
-            descripcion: "Diseñada en colaboración con Agustín Tapia, ideal para jugadores de control.",
+            materiales: ["Fibra de vidrio", "HR3 Core"],
+            descripcion: "Versión con superficie rugosa de la clásica ML10 Pro Cup para mayor efecto en los golpes.",
+            rugosidad: "Rough Surface",
             imagenes: [
                 "/front/paletas/nox/ml10/foto1.webp",
                 "/front/paletas/nox/ml10/foto2.webp"
             ]
         },
         {
-            id: 2,
+            id: 102,
             marca: "Nox",
-            nombre: "Nox ML10 Pro Cup",
-            precio: 350000,
-            tipo: "Versátil",
+            nombre: "Nox Equation Advanced Lady 24",
+            precio: 215000,
+            tipo: "Control",
             materiales: ["Fibra de vidrio", "HR3 Core"],
-            descripcion: "Una paleta mítica en la historia de Nox, usada por Miguel Lamperti.",
+            descripcion: "Paleta ligera y manejable, ideal para jugadoras avanzadas que buscan precisión.",
+            rugosidad: "sin cara especial",
             imagenes: [
-                "../fotos paletas/nox ml10 pro cup/foto1.jpg",
-                "../fotos paletas/nox ml10 pro cup/foto2.jpg",
-                "../fotos paletas/nox ml10 pro cup/foto3.jpg",
-                "../fotos paletas/nox ml10 pro cup/foto4.jpg"
+                "/front/paletas/nox/equation/foto1.webp",
+                "/front/paletas/nox/equation/foto2.webp"
+            ]
+        },
+         {
+            id: 104,  // ID siguiente en la secuencia
+            marca: "Nox",
+            nombre: "Nox VK10 Future 24",
+            precio: 275000,
+            tipo: "Control",
+            materiales: ["Carbono", "HR3 Core"],
+            descripcion: "Paleta versátil con gran control y excelente manejabilidad.",
+            rugosidad: "Rugoso 3D",
+            imagenes: [
+                "/front/paletas/nox/otros/foto1.webp",
+                "/front/paletas/nox/otros/foto2.webp"
+            ]
+        },
+        
+        {
+            id: 101,
+            marca: "Nox",
+            nombre: "Nox AT10 Genius 12K 25",
+            precio: 470000,
+            tipo: "Control",
+            materiales: ["Carbono 12K", "HR3 Core"],
+            descripcion: "Paleta utilizada por Agustín Tapia, con gran equilibrio entre potencia y control.",
+            rugosidad: "3D",
+            imagenes: [
+                "/front/paletas/nox/genius/foto1.webp",
+                "/front/paletas/nox/genius/foto2.webp"
+            ]
+        },
+        {
+            id: 103,  // ID siguiente en la secuencia
+            marca: "Nox",
+            nombre: "Nox LA10 Quantum Carbon 12K 25",
+            precio: 460000,
+            tipo: "Potencia",
+            materiales: ["Carbono 12K", "HR3 Core"],
+            descripcion: "Paleta de alto rendimiento con gran potencia y excelente control.",
+            rugosidad: "Top Spin",
+            imagenes: [
+                "/front/paletas/nox/quantum/foto1.webp",
+                "/front/paletas/nox/quantum/foto2.webp"
             ]
         }
+        
+        
     ];
 
     const contenedor = document.getElementById("productos-container");
@@ -39,14 +84,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const productoHTML = `
             <div class="producto">
-                <div class="galeria">${imagenesHTML}</div>
-                <h3>${producto.nombre}</h3>
-                <p><strong>Precio:</strong> $${producto.precio.toLocaleString()}</p>
-                <p><strong>Tipo:</strong> ${producto.tipo}</p>
-                <p><strong>Materiales:</strong> ${producto.materiales.join(", ")}</p>
-                <p>${producto.descripcion}</p>
-            </div>
+    <h3 class="nombre-separador">${producto.nombre}</h3>
+                          
+    <div class="contenido-producto">
+        <div class="galeria">
+            ${imagenesHTML}
+        </div>
+        <div class="detalles">
+            <p><strong>Precio:</strong> $${producto.precio.toLocaleString()}</p>
+            <p><strong>Tipo:</strong> ${producto.tipo}</p>
+            <p><strong>Materiales:</strong> ${producto.materiales.join(", ")}</p>
+            <p><strong>Tipo de cara: </strong>${producto.rugosidad}</p>
+            <p>* Descripcion: ${producto.descripcion}</p>
+        </div>
+    </div>
+</div>
+
         `;
         contenedor.innerHTML += productoHTML;
     });
+    
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+    const closeModal = document.querySelector(".close");
+
+    // Esperar a que se carguen los productos antes de seleccionar imágenes
+    setTimeout(() => {
+        document.querySelectorAll("#productos-container img").forEach(img => {
+            img.style.cursor = "pointer"; // Cambia el cursor para indicar que es clickeable
+            img.addEventListener("click", function() {
+                modal.style.display = "flex";
+                modalImg.src = this.src;
+            });
+        });
+    }, 500); // Esperar un poco para asegurarse de que los productos se cargaron
+
+    // Cerrar el modal al hacer clic en la "X"
+    closeModal.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    // Cerrar el modal si se hace clic fuera de la imagen
+    modal.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+

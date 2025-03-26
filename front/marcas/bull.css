@@ -92,5 +92,38 @@ body {
     width: 60%; /* Limita el ancho de la descripción */
     margin-left: 10px; /* Reduce la separación */
 }
+.nombre-separador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%; /* Ajusta según el contenedor */
+}
 
+.nombre-separador::after {
+    content: "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+    flex-grow: 1;
+    margin-left: 10px; /* Espaciado entre el nombre y los guiones */
+    overflow: hidden;
+    white-space: nowrap;
+}
 
+/*boton inicio*/
+.volver-inicio {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.volver-inicio:hover {
+    background-color: #0056b3;
+}

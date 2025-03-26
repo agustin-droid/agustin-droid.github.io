@@ -217,7 +217,7 @@ function mostrarProductos(marcaSeleccionada) {
 
         const productoHTML = `
             <div class="producto">
-    <h3>${producto.nombre}                           ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+    <h3 class="nombre-separador">${producto.nombre}</h3>
     <div class="contenido-producto">
         <div class="galeria">
             ${imagenesHTML}
