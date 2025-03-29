@@ -73,3 +73,21 @@ h1 {
     font-weight: bold;
     cursor: pointer;
 }
+.volver-inicio {
+    display: block;
+    margin: 30px auto; /* Mayor separación y centrado */
+    padding: 8px 25px;
+    font-size: 14px;
+    color: white;
+    background-color: #bb3712;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.volver-inicio:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+}
