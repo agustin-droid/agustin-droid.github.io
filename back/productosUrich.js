@@ -10,8 +10,9 @@ const productosUrich = [
         rugosidad: "Rough Surface",
         descripcion: "Paleta con excelente balance y control, ideal para jugadores que buscan precisión.",
         imagenes: [
-            "/front/paletas/urich/fusion-soft-25/foto1.webp",
-            "/front/paletas/urich/fusion-soft-25/foto2.webp"
+            "/front/paletas/urich/fusion/foto1.webp",
+            "/front/paletas/urich/fusion/foto2.webp",
+            "/front/paletas/urich/fusion/foto3.webp"
         ]
     },
     {
@@ -24,8 +25,10 @@ const productosUrich = [
         rugosidad: "Rough Surface",
         descripcion: "Modelo innovador con tecnología TMD para mayor estabilidad y control.",
         imagenes: [
-            "/front/paletas/urich/intelligent-3k-tmd-24/foto1.webp",
-            "/front/paletas/urich/intelligent-3k-tmd-24/foto2.webp"
+            "/front/paletas/urich/intelligent/foto1.webp",
+            "/front/paletas/urich/intelligent/foto2.webp",
+            "/front/paletas/urich/intelligent/foto3.webp"
+
         ]
     },
     {
@@ -38,8 +41,9 @@ const productosUrich = [
         rugosidad: "Rough Surface",
         descripcion: "Paleta con materiales de alta calidad para un juego preciso y estable.",
         imagenes: [
-            "/front/paletas/urich/deep-3k-flex-tech-24/foto1.webp",
-            "/front/paletas/urich/deep-3k-flex-tech-24/foto2.webp"
+            "/front/paletas/urich/otros/foto1.webp",
+            "/front/paletas/urich/otros/foto2.webp",
+            "/front/paletas/urich/otros/foto3.webp"
         ]
     },
     {
@@ -52,8 +56,9 @@ const productosUrich = [
         rugosidad: "Rough Surface",
         descripcion: "Paleta con balance alto para jugadores que buscan potencia.",
         imagenes: [
-            "/front/paletas/urich/dropper-12k-flex-tech-24/foto1.webp",
-            "/front/paletas/urich/dropper-12k-flex-tech-24/foto2.webp"
+            "/front/paletas/urich/otros/foto5.webp",
+            "/front/paletas/urich/otros/foto6.webp",
+            "/front/paletas/urich/otros/foto7.webp"
         ]
     },
     {
@@ -66,22 +71,7 @@ const productosUrich = [
         rugosidad: "Rough Surface",
         descripcion: "Paleta equilibrada que ofrece un gran control y una excelente salida de bola.",
         imagenes: [
-            "/front/paletas/urich/fusion-3k-flex-25/foto1.webp",
-            "/front/paletas/urich/fusion-3k-flex-25/foto2.webp"
-        ]
-    },
-    {
-        id: 307,
-        marca: "Urich",
-        nombre: "Urich Iron Hard 25",
-        precio: 197000,
-        tipo: "Potencia",
-        materiales: ["Carbono", "Eva Hard"],
-        rugosidad: "Rough Surface",
-        descripcion: "Paleta diseñada para jugadores ofensivos que buscan potencia en cada golpe.",
-        imagenes: [
-            "/front/paletas/urich/iron-hard-25/foto1.webp",
-            "/front/paletas/urich/iron-hard-25/foto2.webp"
+            "/front/paletas/urich/fusion/foto5.webp"
         ]
     },
     {
@@ -94,8 +84,10 @@ const productosUrich = [
         rugosidad: "Rough Surface",
         descripcion: "Paleta con estructura reforzada para máxima potencia y resistencia en el juego.",
         imagenes: [
-            "/front/paletas/urich/dropper-hard-25/foto1.webp",
-            "/front/paletas/urich/dropper-hard-25/foto2.webp"
+            "/front/paletas/urich/otros/foto9.webp",
+            "/front/paletas/urich/otros/foto10.webp",
+            "/front/paletas/urich/otros/foto11.webp"
+
         ]
     },
     {
@@ -108,8 +100,9 @@ const productosUrich = [
         rugosidad: "Rough Surface",
         descripcion: "Paleta diseñada con tecnología avanzada para un excelente control y salida de bola.",
         imagenes: [
-            "/front/paletas/urich/deep/foto1.webp",
-            "/front/paletas/urich/deep/foto2.webp"
+           "/front/paletas/urich/otros/foto13.webp",
+            "/front/paletas/urich/otros/foto14.webp",
+            "/front/paletas/urich/otros/foto15.webp"
         ]
     }
 ];
@@ -172,4 +165,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
 
