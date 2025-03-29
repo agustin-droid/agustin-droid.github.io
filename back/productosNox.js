@@ -129,12 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 "/front/paletas/nox/genius/foto3.webp"
 
             ]
-        }
-       
-        
-  
-        
-        
+        } 
     ];
 
     const contenedor = document.getElementById("productos-container");
