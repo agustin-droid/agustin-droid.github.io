@@ -14,6 +14,17 @@ body, html {
     margin: 0;
     padding: 0;
 }
+.mensaje {
+    position: absolute;
+    top: 25%; /* Acerca el mensaje a la barra de navegación */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+}
 
 
 /* Barra de navegación */
