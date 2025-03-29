@@ -10,7 +10,9 @@ const productos = [
         descripcion: "Paleta de gran manejabilidad y control, ideal para jugadores intermedios.",
         imagenes: [
             "/front/paletas/bull/k2 y bp10/foto1.webp",
-            "/front/paletas/bull/k2 y bp10/foto2.webp"
+            "/front/paletas/bull/k2 y bp10/foto2.webp",
+            "/front/paletas/bull/k2 y bp10/foto3.webp"
+
         ]
     },
     {
@@ -24,7 +26,8 @@ const productos = [
         descripcion: "Paleta con forma de diamante y balance alto para máxima potencia.",
         imagenes: [
             "/front/paletas/bull/k2 y bp10/foto5.webp",
-            "/front/paletas/bull/k2 y bp10/foto6.webp"
+            "/front/paletas/bull/k2 y bp10/foto6.webp",
+            "/front/paletas/bull/k2 y bp10/foto7.webp"
         ]
     },
     {
@@ -38,7 +41,8 @@ const productos = [
         descripcion: "Paleta con gran precisión y excelente salida de bola.",
         imagenes: [
             "/front/paletas/bull/ionic 23/foto5.webp",
-            "/front/paletas/bull/ionic 23/foto6.webp"
+            "/front/paletas/bull/ionic 23/foto6.webp",
+            "/front/paletas/bull/ionic 23/foto7.webp"
         ]
     },
     {
@@ -52,7 +56,9 @@ const productos = [
         descripcion: "Modelo diseñado para obtener potencia.",
         imagenes: [
             "/front/paletas/bull/ionic 23/foto1.webp",
-            "/front/paletas/bull/ionic 23/foto2.webp"
+            "/front/paletas/bull/ionic 23/foto2.webp",
+            "/front/paletas/bull/ionic 23/foto3.webp"
+
         ]
     },
     {
@@ -66,7 +72,9 @@ const productos = [
         descripcion: "Paleta versátil con gran control y manejabilidad.",
         imagenes: [
             "/front/paletas/bull/otros/foto1.webp",
-            "/front/paletas/bull/otros/foto2.webp"
+            "/front/paletas/bull/otros/foto2.webp",
+            "/front/paletas/bull/otros/foto3.webp"
+
         ]
     },
     {
@@ -80,9 +88,10 @@ const productos = [
         descripcion: "Paleta diseñada para máximo confort y control en el juego.",
         imagenes: [
             "/front/paletas/bull/vertex 04 24/foto17.webp",
-            "/front/paletas/bull/vertex 04 24/foto18.webp"
+            "/front/paletas/bull/vertex 04 24/foto18.webp",
+            "/front/paletas/bull/vertex 04 24/foto19.webp"
         ]
-    },
+    }/*,
     {
         id: 1,
         marca: "Bullpadel",
@@ -96,7 +105,8 @@ const productos = [
             "/front/paletas/bull/vertex0323/foto2.jpg",
             "/front/paletas/bull/vertex0323/foto1.jpg"
         ]
-    },{
+    }*/
+        ,{
         id: 11,
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 CMF 24",
@@ -107,7 +117,8 @@ const productos = [
         descripcion: "Paleta con materiales de última tecnología para un mejor rendimiento.",
         imagenes: [
             "/front/paletas/bull/vertex 04 24/foto5.webp",
-            "/front/paletas/bull/vertex 04 24/foto6.webp"
+            "/front/paletas/bull/vertex 04 24/foto6.webp",
+            "/front/paletas/bull/vertex 04 24/foto7.webp"
         ]
     },
     
@@ -123,7 +134,9 @@ const productos = [
         descripcion: "Modelo diseñado para control con un balance medio.",
         imagenes: [
             "/front/paletas/bull/hack 03/foto1.jpg",
-            "/front/paletas/bull/hack 03/foto2.jpg"
+            "/front/paletas/bull/hack 03/foto2.jpg",
+            "/front/paletas/bull/hack 03/foto3.webp"
+
         ]
     },
     {
@@ -137,7 +150,8 @@ const productos = [
         descripcion: "Modelo híbrido que ofrece un equilibrio entre potencia y control.",
         imagenes: [
             "/front/paletas/bull/hack 03/foto5.webp",
-            "/front/paletas/bull/hack 03/foto6.webp"
+            "/front/paletas/bull/hack 03/foto6.webp",
+            "/front/paletas/bull/hack 03/foto7.webp"
         ]
     },
     {
@@ -151,7 +165,9 @@ const productos = [
         descripcion: "Modelo híbrido que combina control y potencia en un mismo diseño.",
         imagenes: [
             "/front/paletas/bull/vertex 04 24/foto9.webp",
-            "/front/paletas/bull/vertex 04 24/foto10.webp"
+            "/front/paletas/bull/vertex 04 24/foto10.webp",
+            "/front/paletas/bull/vertex 04 24/foto11.webp"
+
         ]
     },
     {
@@ -165,7 +181,25 @@ const productos = [
         descripcion: "Modelo innovador con tecnología avanzada para mayor potencia y control.",
         imagenes: [
             "/front/paletas/bull/otros/foto5.webp",
-            "/front/paletas/bull/otros/foto6.webp"
+            "/front/paletas/bull/otros/foto6.webp",
+            "/front/paletas/bull/otros/foto7.webp"
+
+        ]
+    },
+    
+    {
+        id: 16, 
+        marca: "Bullpadel",
+        nombre: "Bullpadel Vertex 04 Comfort 25",
+        precio: 390000,
+        tipo: "Comfort",
+        materiales: ["Carbono", "Eva Soft"],
+        rugosidad: "sin cara especial",
+        descripcion: "Paleta diseñada para ofrecer máximo confort y control en el juego.",
+        imagenes: [
+            "/front/paletas/bull/vertex 04 24/foto21.webp",
+            "/front/paletas/bull/vertex 04 24/foto22.webp",
+            "/front/paletas/bull/vertex 04 24/foto23.webp"
         ]
     },
     {
@@ -179,7 +213,25 @@ const productos = [
         descripcion: "Modelo diseñado para potencia con una reduccion de vibraciones.",
         imagenes: [
             "/front/paletas/bull/vertex 04 24/foto1.jpeg",
-            "/front/paletas/bull/vertex 04 24/foto2.webp"
+            "/front/paletas/bull/vertex 04 24/foto2.webp",
+            "/front/paletas/bull/vertex 04 24/foto3.webp"
+
+        ]
+    },,
+    {
+        "id": 15,
+        "marca": "Bullpadel",
+        "nombre": "Bullpadel XPLO 25",
+        "precio": 505000,
+        "tipo": "Potencia",
+        "materiales": ["Xtend-Carbon 12K", "MultiEva"],
+        "rugosidad": "3D grain",
+        "descripcion": "Modelo diseñado para jugadores avanzados que buscan máxima potencia y rendimiento.",
+        "imagenes": [
+            "/front/paletas/bull/xplo/foto1.webp",
+            "/front/paletas/bull/xplo/foto2.webp",
+            "/front/paletas/bull/xplo/foto4.webp"
+
         ]
     },
     {
@@ -193,9 +245,12 @@ const productos = [
         descripcion: "Modelo de última generación diseñado para máxima potencia y reducción de vibraciones.",
         imagenes: [
             "/front/paletas/bull/vertex 04 24/foto13.webp",
-            "/front/paletas/bull/vertex 04 24/foto14.webp"
+            "/front/paletas/bull/vertex 04 24/foto14.webp",
+            "/front/paletas/bull/vertex 04 24/foto15.webp"
+
         ]
     }
+    
 ];
 
 
