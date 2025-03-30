@@ -82,6 +82,21 @@ document.addEventListener("DOMContentLoaded", function () {
              ]
          },
         {
+             id: 108, 
+             marca: "Nox",
+             nombre: "Nox AT10 Genius 18K 24",
+             precio: 415000,
+             tipo: "Control",
+             materiales: ["Carbono 18K", "Eva HR3"],
+             rugosidad: "Rough Surface",
+             descripcion: "Paleta diseñada en colaboración con Agustín Tapia para máximo control y precisión.",
+             imagenes: [
+                 "/front/paletas/nox/genius/foto9.webp",
+                 "/front/paletas/nox/genius/foto10.webp",
+                 "/front/paletas/nox/genius/foto11.webp"
+             ]
+         },
+        {
             id: 105,  // ID siguiente en la secuencia
             marca: "Nox",
             nombre: "Nox LA10 Quantum Carbon 12K 25",
