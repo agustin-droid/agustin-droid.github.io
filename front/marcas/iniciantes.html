@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECOMENDACIONES</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="iniciante.css">
+
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 5px;">Paletas recomendadas si sos iniciante en el padel, de todo tipo de precio y marcas</h1>
+    <h3 style="text-align: center; margin-top: 0;">(ordenadas por precio)</h3>
+
+    <div id="productos-container"></div>
+
+    <!-- Modal para ampliar imágenes -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <!-- Botón de volver al inicio al final de la página -->
+    <button class="volver-inicio" onclick="window.location.href='../../index.html'">Volver a la seleccion de marcas</button>
+
+    <script src="../../back/iniciantes.js"></script>
+   <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            mostrarProductos("Bullpadel");
+        });
+    </script> -->
+</body>
+
+</html>
+
