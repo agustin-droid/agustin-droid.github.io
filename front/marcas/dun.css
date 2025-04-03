@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(171, 4, 249), rgba(152, 24, 152, 0.7));
+    background: linear-gradient(rgba(135, 48, 175, 0.904), rgba(120, 18, 132, 0.641));
 }
 h1 {
     text-align: center;
@@ -85,6 +85,8 @@ body {
     width: 35%; /* Reduce el ancho para acercar la descripción */
     display: flex;
     gap: 5px; /* Espacio entre imágenes */
+        margin-left: 10px;
+
 }
 
 
