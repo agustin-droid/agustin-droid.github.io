@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
-
+@media (max-width: 768px) {
+    .contenedor {
+        width: 95%;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column; /* Si tienes un menú horizontal, lo pone en columna */
+    }
+}
 
 .fondo {
     background-image: url('fondo1.jpeg'); /* Asegúrate de que la ruta es correcta */
