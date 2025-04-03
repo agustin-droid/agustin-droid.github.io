@@ -13,6 +13,8 @@ h1 {
     width: 35%; /* Reduce el ancho para acercar la descripción */
     display: flex;
     gap: 5px; /* Espacio entre imágenes */
+        margin-left: 10px;
+
 }
 
 
