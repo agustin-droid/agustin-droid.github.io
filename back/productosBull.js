@@ -81,7 +81,7 @@ const productos = [
         id: 12,
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 Comfort Mundial 25",
-        precio: 310000,
+        precio: 315000,
         tipo: "Comfort",
         materiales: ["Carbono", "Eva Soft"],
         rugosidad: "sin cara especial",
@@ -103,7 +103,9 @@ const productos = [
         descripcion: "Paleta de alto rendimiento con balance alto y forma diamante.",
         imagenes: [
             "/front/paletas/bull/vertex0323/foto2.jpg",
-            "/front/paletas/bull/vertex0323/foto1.jpg"
+            "/front/paletas/bull/vertex0323/foto1.jpg",
+            "/front/paletas/bull/vertex0323/foto3.webp"
+
         ]
     }
         ,{
