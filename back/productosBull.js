@@ -91,7 +91,7 @@ const productos = [
             "/front/paletas/bull/vertex 04 24/foto18.webp",
             "/front/paletas/bull/vertex 04 24/foto19.webp"
         ]
-    }/*,
+    },
     {
         id: 1,
         marca: "Bullpadel",
@@ -105,12 +105,12 @@ const productos = [
             "/front/paletas/bull/vertex0323/foto2.jpg",
             "/front/paletas/bull/vertex0323/foto1.jpg"
         ]
-    }*/
+    }
         ,{
         id: 11,
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 CMF 24",
-        precio: 340000,
+        precio: 345000,
         tipo: "Potencia",
         materiales: ["Carbono", "Eva Soft"],
         rugosidad: "Top Spin",
@@ -127,7 +127,7 @@ const productos = [
         id: 2,
         marca: "Bullpadel",
         nombre: "Bullpadel Hack 03 23",
-        precio: 340000,
+        precio: 345000,
         tipo: "Control",
         materiales: ["Carbono", "MultiEva"],
         rugosidad: "Top Spin",
