@@ -203,6 +203,83 @@ const productos = [
         ]
     },
     {
+        id: 27,
+        marca: "Bullpadel",
+        nombre: "Bullpadel Ionic Light TF 24",
+        precio: 390000,
+        tipo: "Control",
+        materiales: ["Carbono", "Eva Soft"],
+        rugosidad: "Rough Surface",
+        descripcion: "Edición limitada del Tour Final. Paleta ligera con gran control y manejabilidad para jugadores que buscan precisión.",
+        imagenes: [
+            "/front/paletas/bull/tf/foto33.webp",
+            "/front/paletas/bull/tf/foto34.webp",
+            "/front/paletas/bull/tf/foto35.webp"
+        ]
+    },
+    
+    {
+        id: 23,
+        marca: "Bullpadel",
+        nombre: "Bullpadel Pearl TF 24",
+        precio: 435000,
+        tipo: "Control",
+        materiales: ["Fibra de vidrio", "Eva Soft"],
+        rugosidad: "sin cara especial",
+        descripcion: "Edición limitada del Tour Final. Paleta ideal para jugadoras que buscan control y comodidad.",
+        imagenes: [
+            "/front/paletas/bull/tf/foto17.webp",
+            "/front/paletas/bull/tf/foto18.webp",
+            "/front/paletas/bull/tf/foto19.webp"
+        ]
+    },
+    {
+        id: 24,
+        marca: "Bullpadel",
+        nombre: "Bullpadel Vertex 04 Woman TF 24",
+        precio: 435000,
+        tipo: "Potencia",
+        materiales: ["Carbono 12K", "Eva Soft"],
+        rugosidad: "Rough Surface",
+        descripcion: "Edición limitada del Tour Final. Paleta equilibrada con potencia y maniobrabilidad para jugadoras exigentes.",
+        imagenes: [
+            "/front/paletas/bull/tf/foto21.webp",
+            "/front/paletas/bull/tf/foto22.webp",
+            "/front/paletas/bull/tf/foto23.webp"
+        ]
+    },
+    
+    {
+        id: 25,
+        marca: "Bullpadel",
+        nombre: "Bullpadel Elite TF 24",
+        precio: 435000,
+        tipo: "Control",
+        materiales: ["Carbono", "Eva Soft"],
+        rugosidad: "Rough Surface",
+        descripcion: "Edición limitada del Tour Final. Diseñada para jugadoras que buscan control con una gran salida de bola.",
+        imagenes: [
+            "/front/paletas/bull/tf/foto25.webp",
+            "/front/paletas/bull/tf/foto26.webp",
+            "/front/paletas/bull/tf/foto27.webp"
+        ]
+    },
+    {
+        id: 26,
+        marca: "Bullpadel",
+        nombre: "Bullpadel Flow TF 24",
+        precio: 435000,
+        tipo: "Control",
+        materiales: ["Carbono", "Eva Soft"],
+        rugosidad: "Rough Surface",
+        descripcion: "Edición limitada del Tour Final. Paleta equilibrada con un diseño exclusivo para jugadoras avanzadas.",
+        imagenes: [
+            "/front/paletas/bull/tf/foto29.webp",
+            "/front/paletas/bull/tf/foto30.webp",
+            "/front/paletas/bull/tf/foto31.webp"
+        ]
+    },
+    {
         id: 3,
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 2024",
@@ -248,6 +325,66 @@ const productos = [
             "/front/paletas/bull/vertex 04 24/foto14.webp",
             "/front/paletas/bull/vertex 04 24/foto15.webp"
 
+        ]
+    },
+    {
+        id: 19,
+        marca: "Bullpadel",
+        nombre: "Bullpadel Hack 04 TF 24",
+        precio: 535000,
+        tipo: "Potencia",
+        materiales: ["Carbono 12K", "Eva Hard"],
+        rugosidad: "Rough Surface",
+        descripcion: "Edición limitada del Tour Final. Paleta diseñada para jugadores ofensivos que buscan potencia.",
+        imagenes: [
+            "/front/paletas/bull/tf/foto1.webp",
+            "/front/paletas/bull/tf/foto2.webp",
+            "/front/paletas/bull/tf/foto3.webp"
+        ]
+    },
+    {
+        id: 20,
+        marca: "Bullpadel",
+        nombre: "Bullpadel Vertex 04 TF 24",
+        precio: 535000,
+        tipo: "Potencia",
+        materiales: ["Carbono 12K", "Eva Hard"],
+        rugosidad: "Rough Surface",
+        descripcion: "Edición limitada del Tour Final. Paleta con balance alto y potencia explosiva.",
+        imagenes: [
+            "/front/paletas/bull/tf/foto5.webp",
+            "/front/paletas/bull/tf/foto6.webp",
+            "/front/paletas/bull/tf/foto7.webp"
+        ]
+    },
+    {
+        id: 21,
+        marca: "Bullpadel",
+        nombre: "Bullpadel XPLO TF 24",
+        precio: 535000,
+        tipo: "Control",
+        materiales: ["Fibra de vidrio", "Eva Soft"],
+        rugosidad: "sin cara especial",
+        descripcion: "Edición limitada del Tour Final. Paleta de gran control para jugadores en evolución.",
+        imagenes: [
+            "/front/paletas/bull/tf/foto9.webp",
+            "/front/paletas/bull/tf/foto10.webp",
+            "/front/paletas/bull/tf/foto11.webp"
+        ]
+    },
+    {
+        id: 22,
+        marca: "Bullpadel",
+        nombre: "Bullpadel Neuron TF 24",
+        precio: 535000,
+        tipo: "Control",
+        materiales: ["Carbono", "Eva Soft"],
+        rugosidad: "Rough Surface",
+        descripcion: "Edición limitada del Tour Final. Paleta innovadora con excelente estabilidad y control.",
+        imagenes: [
+            "/front/paletas/bull/tf/foto13.webp",
+            "/front/paletas/bull/tf/foto14.webp",
+            "/front/paletas/bull/tf/foto15.webp"
         ]
     }
     
