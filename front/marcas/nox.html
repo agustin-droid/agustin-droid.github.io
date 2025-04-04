@@ -35,6 +35,13 @@
                 <button id="next" class="nav-btn">❯</button>
             </div>
     <!--<button class="volver-inicio" onclick="window.location.href='../../index.html'">Volver a la seleccion de marcas</button>-->
-
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            mostrarProductos("Dunlop");
+        });
+        function toggleMenu() {
+        document.querySelector('#barra-marcas ul').classList.toggle('show');
+    }
+    </script>
 </body>
 </html>
