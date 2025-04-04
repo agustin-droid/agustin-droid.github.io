@@ -1,4 +1,3 @@
-
 const productos = [
     {
         id: 100,
