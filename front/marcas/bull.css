@@ -1,6 +1,5 @@
 body {
-    background: linear-gradient(rgb(231, 15, 15), rgba(224, 30, 16, 0.877));}
-}
+    background: linear-gradient(rgb(129, 97, 97), rgba(99, 83, 82, 0.877));}
 h1 {
     text-align: center;
     font-size: 3rem;
@@ -9,6 +8,32 @@ h1 {
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     padding: 20px 0;
 }
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
 .paleta {
     position: relative;
     padding: 20px;
@@ -83,7 +108,7 @@ h1 {
     width: 35%; /* Reduce el ancho para acercar la descripción */
     display: flex;
     gap: 5px; /* Espacio entre imágenes */
-        margin-left: 10px;
+    margin-left: 10px;
 
 }
 
@@ -126,4 +151,78 @@ h1 {
 .volver-inicio:hover {
     background-color: #c9302c;
     transform: scale(1.05);
+}
+/* Estilo base para escritorio */
+#barra-marcas {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Negro con transparencia */
+    z-index: 100;
+    font-family: 'Oswald', sans-serif;
+}
+#barra-marcas ul li {
+    margin: 0 15px; /* Aumenta el espacio horizontal entre las opciones */
+}
+
+#barra-marcas a {
+    padding: 10px 0; /* Espacio vertical */
+    display: inline-block; /* Asegura que el padding se aplique correctamente */
+}
+
+#barra-marcas ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    margin: 0;
+    list-style: none;
+}
+
+#barra-marcas a {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#barra-marcas a:hover {
+    color: white;
+}
+
+
+/* Menú hamburguesa solo visible en móviles */
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    z-index: 101;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #barra-marcas ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #barra-marcas ul.show {
+        display: flex;
+    }
 }
