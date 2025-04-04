@@ -251,8 +251,11 @@ body {
     top: 15px;
     right: 20px;
     font-size: 28px;
-    color: white;
+    color: rgb(15, 14, 14);
     cursor: pointer;
+    position: absolute;
+  top: 1rem;         /* distancia desde el borde superior */
+  right: 1rem;       /* lo alinea a la derecha */
     z-index: 101;
 }
 
