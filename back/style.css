@@ -31,10 +31,6 @@
     overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
 }
 
-
-
-
-
 .imagen-producto:hover {
     transform: scale(1.3); /* Efecto de zoom al pasar el mouse */
 }

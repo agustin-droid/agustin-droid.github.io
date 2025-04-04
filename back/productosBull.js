@@ -81,7 +81,7 @@ const productos = [
         id: 12,
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 Comfort Mundial 25",
-        precio: 315000,
+        precio: 310000,
         tipo: "Comfort",
         materiales: ["Carbono", "Eva Soft"],
         rugosidad: "sin cara especial",
@@ -112,7 +112,7 @@ const productos = [
         id: 11,
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 CMF 24",
-        precio: 345000,
+        precio: 340000,
         tipo: "Potencia",
         materiales: ["Carbono", "Eva Soft"],
         rugosidad: "Top Spin",
@@ -129,7 +129,7 @@ const productos = [
         id: 2,
         marca: "Bullpadel",
         nombre: "Bullpadel Hack 03 23",
-        precio: 345000,
+        precio: 340000,
         tipo: "Control",
         materiales: ["Carbono", "MultiEva"],
         rugosidad: "Top Spin",
@@ -393,43 +393,62 @@ const productos = [
 ];
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     mostrarProductos("Bullpadel");
 });
 
 function mostrarProductos(marcaSeleccionada) {
     const contenedor = document.getElementById("productos-container");
-    contenedor.innerHTML = ""; // Limpia el contenido anterior
+    contenedor.innerHTML = "";
 
-    const productosFiltrados = productos.filter(p => p.marca === marcaSeleccionada);
+    const productosFiltrados = productos
+        .filter(p => p.marca === marcaSeleccionada)
+        .sort((a, b) => a.precio - b.precio);
 
-    productosFiltrados.forEach(producto => {
-        let imagenesHTML = producto.imagenes.map(img => 
-            `<img src="${img}" alt="${producto.nombre}" class="imagen-producto">`
-        ).join("");
-
+    productosFiltrados.forEach((producto, index) => {
+        const imagenes = producto.imagenes;
+        const id = `carrusel-${index}`;
         const productoHTML = `
-            <div class="producto">
-                <h3 class="nombre-separador">${producto.nombre}</h3>
-                <div class="contenido-producto">
-                    <div class="galeria">
-                        ${imagenesHTML}
-                    </div>
-                    <div class="detalles">
-                        <p><strong>Precio:</strong> $${producto.precio.toLocaleString()}</p>
-                        <p><strong>Tipo:</strong> ${producto.tipo}</p>
-                        <p><strong>Materiales:</strong> ${producto.materiales.join(", ")}</p>
-                        <p><strong>Tipo de cara: </strong>${producto.rugosidad}</p>
-                        <p>* Descripción: ${producto.descripcion}</p>
-                    </div>
+            <div class="tarjeta-producto">
+                <div class="carrusel" id="${id}">
+                    <button class="carrusel-btn prev" data-index="${index}">&#10094;</button>
+                    <img src="${imagenes[0]}" class="imagen-carrusel" id="img-${index}" alt="${producto.nombre}">
+                    <button class="carrusel-btn next" data-index="${index}">&#10095;</button>
+                </div>
+                <div class="info-producto">
+                    <h3>${producto.nombre}</h3>
+                    <p><strong>Descripción: </strong>${producto.descripcion}</p>
+
+                    <p><strong>Precio:</strong> $${producto.precio.toLocaleString()}</p>
+                    <p><strong>Tipo:</strong> ${producto.tipo}</p>
+                    <p><strong>Materiales:</strong> ${producto.materiales.join(", ")}</p>
+                    <p><strong>Tipo de cara:</strong> ${producto.rugosidad}</p>
                 </div>
             </div>
         `;
+
         contenedor.innerHTML += productoHTML;
     });
 
+    inicializarCarruseles(productosFiltrados);
     inicializarModal();
+}
+
+function inicializarCarruseles(productos) {
+    const estadoCarrusel = productos.map(() => 0);
+
+    document.querySelectorAll('.carrusel-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const index = parseInt(btn.dataset.index);
+            const tipo = btn.classList.contains('next') ? 1 : -1;
+            const total = productos[index].imagenes.length;
+
+            estadoCarrusel[index] = (estadoCarrusel[index] + tipo + total) % total;
+
+            const img = document.getElementById(`img-${index}`);
+            img.src = productos[index].imagenes[estadoCarrusel[index]];
+        });
+    });
 }
 
 function inicializarModal() {
@@ -442,38 +461,44 @@ function inicializarModal() {
     let imagenesActuales = [];
     let imagenIndex = 0;
 
-    // Esperar a que se carguen los productos antes de seleccionar imágenes
-    setTimeout(() => {
-        document.querySelectorAll("#productos-container .galeria img").forEach(img => {
-            img.style.cursor = "pointer"; // Cursor de clickeable
-            img.addEventListener("click", function() {
-                const productoDiv = this.closest(".producto");
-                imagenesActuales = Array.from(productoDiv.querySelectorAll(".galeria img")).map(img => img.src);
-                imagenIndex = imagenesActuales.indexOf(this.src);
-                mostrarImagen();
-            });
+    document.querySelectorAll("#productos-container .imagen-carrusel").forEach(img => {
+        img.style.cursor = "pointer";
+        img.addEventListener("click", function () {
+            const index = parseInt(this.id.split("-")[1]);
+            const producto = productos.filter(p => p.marca === "Bullpadel")[index];
+
+            if (!producto) return;
+
+            imagenesActuales = producto.imagenes;
+            imagenIndex = imagenesActuales.findIndex(src => src === this.src);
+
+            // Si no encuentra la imagen, usa la primera por defecto
+            if (imagenIndex === -1) {
+                imagenIndex = 0;
+            }
+
+            mostrarImagen();
         });
-    }, 500);
+    });
 
     function mostrarImagen() {
-        modal.style.display = "flex";
-        modalImg.src = imagenesActuales[imagenIndex];
+        if (imagenesActuales.length > 0) {
+            modalImg.src = imagenesActuales[imagenIndex]; // Asignar la imagen correcta
+        }
+        modal.style.display = "flex"; // Mostrar el modal
     }
 
-    // Botón siguiente
-    nextBtn.addEventListener("click", function() {
+    nextBtn.addEventListener("click", function () {
         imagenIndex = (imagenIndex + 1) % imagenesActuales.length;
         mostrarImagen();
     });
 
-    // Botón anterior
-    prevBtn.addEventListener("click", function() {
+    prevBtn.addEventListener("click", function () {
         imagenIndex = (imagenIndex - 1 + imagenesActuales.length) % imagenesActuales.length;
         mostrarImagen();
     });
 
-    // Soporte para teclas de flecha izquierda/derecha
-    document.addEventListener("keydown", function(event) {
+    document.addEventListener("keydown", function (event) {
         if (modal.style.display === "flex") {
             if (event.key === "ArrowRight") {
                 imagenIndex = (imagenIndex + 1) % imagenesActuales.length;
@@ -484,24 +509,13 @@ function inicializarModal() {
         }
     });
 
-    // Cerrar el modal al hacer clic en la "X"
-    closeModal.addEventListener("click", function() {
+    closeModal.addEventListener("click", function () {
         modal.style.display = "none";
     });
 
-    // Cerrar el modal si se hace clic fuera de la imagen
-    modal.addEventListener("click", function(event) {
+    modal.addEventListener("click", function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
         }
     });
 }
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
-
-    menuToggle.addEventListener("click", function () {
-        navLinks.classList.toggle("show"); // Alternar clase 'show'
-    });
-});
-

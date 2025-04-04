@@ -84,70 +84,130 @@ const productos = [
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    mostrarProductos("Bullpadel");
+    mostrarProductos("Dunlop");
 });
 
 function mostrarProductos(marcaSeleccionada) {
     const contenedor = document.getElementById("productos-container");
-    contenedor.innerHTML = ""; // Limpia el contenido anterior
+    contenedor.innerHTML = "";
 
-    const productosFiltrados = productos.filter(p => p.marca === marcaSeleccionada);
+    const productosFiltrados = productos
+        .filter(p => p.marca === marcaSeleccionada)
+        .sort((a, b) => a.precio - b.precio);
 
-    productosFiltrados.forEach(producto => {
-        let imagenesHTML = producto.imagenes.map(img => 
-            `<img src="${img}" alt="${producto.nombre}" class="imagen-producto">`
-        ).join("");
-
+    productosFiltrados.forEach((producto, index) => {
+        const imagenes = producto.imagenes;
+        const id = `carrusel-${index}`;
         const productoHTML = `
-            <div class="producto">
-    <h3 class="nombre-separador">${producto.nombre}</h3>
-    <div class="contenido-producto">
-        <div class="galeria">
-            ${imagenesHTML}
-        </div>
-        <div class="detalles">
-            <p><strong>Precio:</strong> $${producto.precio.toLocaleString()}</p>
-            <p><strong>Tipo:</strong> ${producto.tipo}</p>
-            <p><strong>Materiales:</strong> ${producto.materiales.join(", ")}</p>
-            <p><strong>Tipo de cara: </strong>${producto.rugosidad}</p>
-            <p>* Descripcion: ${producto.descripcion}</p>
-        </div>
-    </div>
-</div>
+            <div class="tarjeta-producto">
+                <div class="carrusel" id="${id}">
+                    <button class="carrusel-btn prev" data-index="${index}">&#10094;</button>
+                    <img src="${imagenes[0]}" class="imagen-carrusel" id="img-${index}" alt="${producto.nombre}">
+                    <button class="carrusel-btn next" data-index="${index}">&#10095;</button>
+                </div>
+                <div class="info-producto">
+                    <h3>${producto.nombre}</h3>
+                    <p><strong>Descripción: </strong>${producto.descripcion}</p>
 
+                    <p><strong>Precio:</strong> $${producto.precio.toLocaleString()}</p>
+                    <p><strong>Tipo:</strong> ${producto.tipo}</p>
+                    <p><strong>Materiales:</strong> ${producto.materiales.join(", ")}</p>
+                    <p><strong>Tipo de cara:</strong> ${producto.rugosidad}</p>
+                </div>
+            </div>
         `;
+
         contenedor.innerHTML += productoHTML;
+    });
+
+    inicializarCarruseles(productosFiltrados);
+    inicializarModal();
+}
+
+function inicializarCarruseles(productos) {
+    const estadoCarrusel = productos.map(() => 0);
+
+    document.querySelectorAll('.carrusel-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const index = parseInt(btn.dataset.index);
+            const tipo = btn.classList.contains('next') ? 1 : -1;
+            const total = productos[index].imagenes.length;
+
+            estadoCarrusel[index] = (estadoCarrusel[index] + tipo + total) % total;
+
+            const img = document.getElementById(`img-${index}`);
+            img.src = productos[index].imagenes[estadoCarrusel[index]];
+        });
     });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+function inicializarModal() {
     const modal = document.getElementById("modal");
     const modalImg = document.getElementById("modal-img");
     const closeModal = document.querySelector(".close");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
 
-    // Esperar a que se carguen los productos antes de seleccionar imágenes
-    setTimeout(() => {
-        document.querySelectorAll("#productos-container img").forEach(img => {
-            img.style.cursor = "pointer"; // Cambia el cursor para indicar que es clickeable
-            img.addEventListener("click", function() {
-                modal.style.display = "flex";
-                modalImg.src = this.src;
-            });
+    let imagenesActuales = [];
+    let imagenIndex = 0;
+
+    document.querySelectorAll("#productos-container .imagen-carrusel").forEach(img => {
+        img.style.cursor = "pointer";
+        img.addEventListener("click", function () {
+            const index = parseInt(this.id.split("-")[1]);
+            const producto = productos.filter(p => p.marca === "Dunlop")[index];
+
+            if (!producto) return;
+
+            imagenesActuales = producto.imagenes;
+            imagenIndex = imagenesActuales.findIndex(src => src === this.src);
+
+            // Si no encuentra la imagen, usa la primera por defecto
+            if (imagenIndex === -1) {
+                imagenIndex = 0;
+            }
+
+            mostrarImagen();
         });
-    }, 500); // Esperar un poco para asegurarse de que los productos se cargaron
+    });
 
-    // Cerrar el modal al hacer clic en la "X"
-    closeModal.addEventListener("click", function() {
+    function mostrarImagen() {
+        if (imagenesActuales.length > 0) {
+            modalImg.src = imagenesActuales[imagenIndex]; // Asignar la imagen correcta
+        }
+        modal.style.display = "flex"; // Mostrar el modal
+    }
+
+    nextBtn.addEventListener("click", function () {
+        imagenIndex = (imagenIndex + 1) % imagenesActuales.length;
+        mostrarImagen();
+    });
+
+    prevBtn.addEventListener("click", function () {
+        imagenIndex = (imagenIndex - 1 + imagenesActuales.length) % imagenesActuales.length;
+        mostrarImagen();
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (modal.style.display === "flex") {
+            if (event.key === "ArrowRight") {
+                imagenIndex = (imagenIndex + 1) % imagenesActuales.length;
+            } else if (event.key === "ArrowLeft") {
+                imagenIndex = (imagenIndex - 1 + imagenesActuales.length) % imagenesActuales.length;
+            }
+            mostrarImagen();
+        }
+    });
+
+    closeModal.addEventListener("click", function () {
         modal.style.display = "none";
     });
 
-    // Cerrar el modal si se hace clic fuera de la imagen
-    modal.addEventListener("click", function(event) {
+    modal.addEventListener("click", function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
         }
     });
-});
+}
 
 
-// noxxxxx
