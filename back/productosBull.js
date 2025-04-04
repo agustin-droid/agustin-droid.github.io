@@ -411,41 +411,78 @@ function mostrarProductos(marcaSeleccionada) {
 
         const productoHTML = `
             <div class="producto">
-    <h3 class="nombre-separador">${producto.nombre}</h3>
-    <div class="contenido-producto">
-        <div class="galeria">
-            ${imagenesHTML}
-        </div>
-        <div class="detalles">
-            <p><strong>Precio:</strong> $${producto.precio.toLocaleString()}</p>
-            <p><strong>Tipo:</strong> ${producto.tipo}</p>
-            <p><strong>Materiales:</strong> ${producto.materiales.join(", ")}</p>
-            <p><strong>Tipo de cara: </strong>${producto.rugosidad}</p>
-            <p>* Descripcion: ${producto.descripcion}</p>
-        </div>
-    </div>
-</div>
-
+                <h3 class="nombre-separador">${producto.nombre}</h3>
+                <div class="contenido-producto">
+                    <div class="galeria">
+                        ${imagenesHTML}
+                    </div>
+                    <div class="detalles">
+                        <p><strong>Precio:</strong> $${producto.precio.toLocaleString()}</p>
+                        <p><strong>Tipo:</strong> ${producto.tipo}</p>
+                        <p><strong>Materiales:</strong> ${producto.materiales.join(", ")}</p>
+                        <p><strong>Tipo de cara: </strong>${producto.rugosidad}</p>
+                        <p>* Descripción: ${producto.descripcion}</p>
+                    </div>
+                </div>
+            </div>
         `;
         contenedor.innerHTML += productoHTML;
     });
+
+    inicializarModal();
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+function inicializarModal() {
     const modal = document.getElementById("modal");
     const modalImg = document.getElementById("modal-img");
     const closeModal = document.querySelector(".close");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+
+    let imagenesActuales = [];
+    let imagenIndex = 0;
 
     // Esperar a que se carguen los productos antes de seleccionar imágenes
     setTimeout(() => {
-        document.querySelectorAll("#productos-container img").forEach(img => {
-            img.style.cursor = "pointer"; // Cambia el cursor para indicar que es clickeable
+        document.querySelectorAll("#productos-container .galeria img").forEach(img => {
+            img.style.cursor = "pointer"; // Cursor de clickeable
             img.addEventListener("click", function() {
-                modal.style.display = "flex";
-                modalImg.src = this.src;
+                const productoDiv = this.closest(".producto");
+                imagenesActuales = Array.from(productoDiv.querySelectorAll(".galeria img")).map(img => img.src);
+                imagenIndex = imagenesActuales.indexOf(this.src);
+                mostrarImagen();
             });
         });
-    }, 500); // Esperar un poco para asegurarse de que los productos se cargaron
+    }, 500);
+
+    function mostrarImagen() {
+        modal.style.display = "flex";
+        modalImg.src = imagenesActuales[imagenIndex];
+    }
+
+    // Botón siguiente
+    nextBtn.addEventListener("click", function() {
+        imagenIndex = (imagenIndex + 1) % imagenesActuales.length;
+        mostrarImagen();
+    });
+
+    // Botón anterior
+    prevBtn.addEventListener("click", function() {
+        imagenIndex = (imagenIndex - 1 + imagenesActuales.length) % imagenesActuales.length;
+        mostrarImagen();
+    });
+
+    // Soporte para teclas de flecha izquierda/derecha
+    document.addEventListener("keydown", function(event) {
+        if (modal.style.display === "flex") {
+            if (event.key === "ArrowRight") {
+                imagenIndex = (imagenIndex + 1) % imagenesActuales.length;
+            } else if (event.key === "ArrowLeft") {
+                imagenIndex = (imagenIndex - 1 + imagenesActuales.length) % imagenesActuales.length;
+            }
+            mostrarImagen();
+        }
+    });
 
     // Cerrar el modal al hacer clic en la "X"
     closeModal.addEventListener("click", function() {
@@ -458,7 +495,13 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.style.display = "none";
         }
     });
+}
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("show"); // Alternar clase 'show'
+    });
 });
 
-
-// noxxxxx
