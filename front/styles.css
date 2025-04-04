@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
+
 @media (max-width: 768px) {
     .contenedor {
         width: 95%;
@@ -9,7 +10,6 @@
         flex-direction: column; /* Si tienes un menú horizontal, lo pone en columna */
     }
 }
-
 .fondo {
     background-image: url('fondo1.jpeg'); /* Asegúrate de que la ruta es correcta */
     background-size: cover; /* La imagen cubrirá toda la pantalla */
@@ -22,9 +22,10 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
 .mensaje {
     position: absolute;
-    top: 25%; /* Acerca el mensaje a la barra de navegación */
+    top: 38%; /* Acerca el mensaje a la barra de navegación */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -33,7 +34,6 @@ body, html {
     padding: 20px;
     border-radius: 10px;
 }
-
 
 /* Barra de navegación */
 .barra-marcas {
