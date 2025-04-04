@@ -11,30 +11,33 @@
 
 </head>
 <body>
-    <h1 style="text-align: center; margin-bottom: 5px;">Paletas Urich</h1>
+    <h1 style="text-align: center; margin-top: 80px;">Paletas Urich</h1>
     <h3 style="text-align: center; margin-top: 0;">(ordenadas por precio)</h3>
-<nav class="barra-marcas">
+    <nav id="barra-marcas">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <ul>
             <li><a href="/index.html">Inicio</a></li>
             <li><a href="/front/marcas/bullpadel.html">BullPadel</a></li>
             <li><a href="/front/marcas/nox.html">Nox</a></li>
             <li><a href="/front/marcas/dunlop.html">Dunlop</a></li>
             <li><a href="/front/marcas/urich.html">Urich</a></li>
-
-        <!--    <li><a href="front/marcas/iniciantes.html">Iniciantes/principiantes</a></li>  -->
-
         </ul>
-    
     </nav>
-
-
+    
     <div id="productos-container"></div>
 
-    <!-- Modal para ampliar imágenes -->
     <div id="modal" class="modal">
         <span class="close">&times;</span>
-        <img class="modal-content" id="modal-img">
+        <button id="prev" class="nav-btn">❮</button>
+        <img id="modal-img" class="modal-content">
+        <button id="next" class="nav-btn">❯</button>
     </div>
+    
+
+
+    <!-- Botón de volver al inicio al final de la página 
+    <button class="volver-inicio" onclick="window.location.href='../../index.html'">Volver a la seleccion de marcas</button> -->
+
     <script src="../../back/productosUrich.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {

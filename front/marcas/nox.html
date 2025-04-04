@@ -7,36 +7,35 @@
     <title>Nox - Paletas de Pádel</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="nox.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
 
     <script src="../../back/productosNox.js" defer></script>
 </head>
 <body>
     <header>
-        <h1 style="text-align: center;">Paletas de Pádel Nox
+        <h1 style="text-align: center; margin-top: 80px;">Paletas de Pádel Nox
             <h3 style="text-align: center;">(ordenadas por precio)</h3>
-<nav class="barra-marcas">
-        <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/front/marcas/bullpadel.html">BullPadel</a></li>
-            <li><a href="/front/marcas/nox.html">Nox</a></li>
-            <li><a href="/front/marcas/dunlop.html">Dunlop</a></li>
-            <li><a href="/front/marcas/urich.html">Urich</a></li>
+            <nav id="barra-marcas">
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/front/marcas/bullpadel.html">BullPadel</a></li>
+                    <li><a href="/front/marcas/nox.html">Nox</a></li>
+                    <li><a href="/front/marcas/dunlop.html">Dunlop</a></li>
+                    <li><a href="/front/marcas/urich.html">Urich</a></li>
+                </ul>
+            </nav>
+            
+            <div id="productos-container"></div>
+        
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <button id="prev" class="nav-btn">❮</button>
+                <img id="modal-img" class="modal-content">
+                <button id="next" class="nav-btn">❯</button>
+            </div>
+    <!--<button class="volver-inicio" onclick="window.location.href='../../index.html'">Volver a la seleccion de marcas</button>-->
 
-        <!--    <li><a href="front/marcas/iniciantes.html">Iniciantes/principiantes</a></li>  -->
-
-        </ul>
-    
-    </nav>
-
-        </h1>
-    </header>
-    <main id="productos-container">
-        <!-- Aquí se cargarán las paletas de NOX desde JS -->
-    </main>
-    <div id="modal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modal-img">
-    </div>
 </body>
 </html>

@@ -1,73 +1,179 @@
+/* Fuente global */
 body {
-    background: linear-gradient(rgb(129, 97, 97), rgba(99, 83, 82, 0.877));}
-h1 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #000000;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    padding: 20px 0;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
-.nav-btn {
+
+/* Contenedor de productos */
+#productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos de la tarjeta */
+.tarjeta-producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.tarjeta-producto:hover {
+    transform: scale(1.03);
+}
+
+/* Etiqueta Gratis */
+.etiqueta-gratis {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Carrusel de imágenes */
+.carrusel {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-carrusel {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortarla */
+}
+
+/* Botones del carrusel */
+.carrusel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0,0.4);
     color: white;
     border: none;
-    font-size: 30px;
-    padding: 10px 15px;
-    cursor: pointer;
+    padding: 5px 8px;
     border-radius: 50%;
-    z-index: 10;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 14px;
 }
 
-#prev {
-    left: 20px;
+.carrusel-btn:hover {
+    background: rgba(0,0,0,0.6);
 }
 
-#next {
-    right: 20px;
+.carrusel .prev {
+    left: 5px;
+}
+.carrusel .next {
+    right: 5px;
 }
 
-.nav-btn:hover {
-    background: rgba(0, 0, 0, 0.8);
+/* Información del producto */
+.info-producto {
+    padding: 15px;
+    text-align: center;
 }
 
-.paleta {
-    position: relative;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1);
+.info-producto h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
-.paleta::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+.info-producto p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+}
+
+/* Precio */
+.precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.precio-transferencia {
+    font-size: 1rem;
+    color: #27AE60;
+    font-weight: bold;
+}
+
+/* Botón Comprar */
+.boton-comprar {
+    background-color: black;
+    color: white;
+    padding: 10px;
     width: 100%;
-    height: 5px;
-    background: #8B0000; /* Color rojo oscuro */
-    border-radius: 10px 10px 0 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
+.boton-comprar:hover {
+    background-color: #444;
+}
 
-.paleta {
-    display: flex;
+/* Responsive: 2 tarjetas por fila en tablet, 1 en móvil */
+@media (max-width: 768px) {
+    .tarjeta-producto {
+        width: 90%;
+    }
+}
+
+/* Estilo para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
-.paleta img {
-    width: 200px; /* Ajusta el tamaño según necesites */
-    height: auto;
+/* Imagen dentro del modal */
+.modal-content {
+    max-width: 80%;
+    max-height: 80vh;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Modal de imagen */
+/* Botón para cerrar el modal */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -77,80 +183,25 @@ h1 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-/* Imagen dentro del modal */
 .modal-content {
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: auto;
 }
 
-/* Botón de cerrar */
 .close {
     position: absolute;
     top: 10px;
     right: 20px;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
-}
-.contenido-producto {
-    display: flex;
-    align-items: center; /* Alinear mejor verticalmente */
-}
-
-.galeria {
-    width: 35%; /* Reduce el ancho para acercar la descripción */
-    display: flex;
-    gap: 5px; /* Espacio entre imágenes */
-    margin-left: 10px;
-
-}
-
-
-.detalles {
-    width: 60%; /* Limita el ancho de la descripción */
-    margin-left: 10px; /* Reduce la separación */
-}
-.nombre-separador {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%; /* Ajusta según el contenedor */
-}
-
-.nombre-separador::after {
-    content: "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
-    flex-grow: 1;
-    margin-left: 10px; /* Espaciado entre el nombre y los guiones */
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.volver-inicio {
-    display: block;
-    margin: 30px auto; /* Mayor separación y centrado */
-    padding: 8px 25px;
-    font-size: 14px;
-    color: white;
-    background-color: #50201e;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s, transform 0.1s;
-}
-
-.volver-inicio:hover {
-    background-color: #c9302c;
-    transform: scale(1.05);
 }
 /* Estilo base para escritorio */
 #barra-marcas {
