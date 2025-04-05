@@ -109,14 +109,12 @@ body {
 /* Precio */
 .precio {
     font-size: 1.3rem;
-    font-weight: bold;
     color: #000;
 }
 
 .precio-transferencia {
     font-size: 1rem;
     color: #27AE60;
-    font-weight: bold;
 }
 
 /* Botón Comprar */
