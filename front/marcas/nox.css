@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    color: #333;
 }
 
 /* Contenedor de productos */
@@ -109,12 +110,14 @@ body {
 /* Precio */
 .precio {
     font-size: 1.3rem;
+    font-weight: bold;
     color: #000;
 }
 
 .precio-transferencia {
     font-size: 1rem;
     color: #27AE60;
+    font-weight: bold;
 }
 
 /* Botón Comprar */
@@ -255,6 +258,7 @@ body {
   right: 1rem;       /* lo alinea a la derecha */
     z-index: 101;
 }
+
 /* Responsive */
 @media (max-width: 768px) {
     .menu-toggle {
