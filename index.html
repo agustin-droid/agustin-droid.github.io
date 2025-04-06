@@ -11,19 +11,15 @@
 </head>
 <body>
 
-    <!-- Barra de navegación -->
-    <nav class="barra-marcas">
-        <ul>
-            <li><a href="/front/marcas/bullpadel.html">BullPadel</a></li>
-            <li><a href="/front/marcas/nox.html">Nox</a></li>
-            <li><a href="/front/marcas/dunlop.html">Dunlop</a></li>
-            <li><a href="/front/marcas/urich.html">Urich</a></li>
-
-        <!--    <li><a href="front/marcas/iniciantes.html">Iniciantes/principiantes</a></li>  -->
-
-        </ul>
-    
-    </nav>
+<nav id="barra-marcas">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul>
+        <li><a href="/front/marcas/bullpadel.html">BullPadel</a></li>
+        <li><a href="/front/marcas/nox.html">Nox</a></li>
+        <li><a href="/front/marcas/dunlop.html">Dunlop</a></li>
+        <li><a href="/front/marcas/urich.html">Urich</a></li>
+    </ul>
+</nav> 
     <div class="fondo">
     </div>
     <div class="mensaje">
@@ -42,7 +38,12 @@
 </body>
 </html>
 <script src="/back/script.js"></script>
+<script>function toggleMenu() {
+    document.querySelector('#barra-marcas ul').classList.toggle('show');
+}</script>
 </body>
 </html>
+
+
 
 
