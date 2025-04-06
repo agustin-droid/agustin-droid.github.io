@@ -36,55 +36,81 @@ body, html {
 }
 
 /* Barra de navegación */
-.barra-marcas {
-    position: fixed; /* Fija la barra en la parte superior */
+#barra-marcas {
+    position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
-    padding: 15px 0;
-    text-align: center;
-    z-index: 1000; /* Asegura que esté por encima del contenido */
+    background: rgba(0, 0, 0, 0.7); /* Negro con transparencia */
+    z-index: 100;
+    font-family: 'Oswald', sans-serif;
+}
+#barra-marcas ul li {
+    margin: 0 15px; /* Aumenta el espacio horizontal entre las opciones */
 }
 
-.barra-marcas ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#barra-marcas a {
+    padding: 10px 0; /* Espacio vertical */
+    display: inline-block; /* Asegura que el padding se aplique correctamente */
+}
+
+#barra-marcas ul {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    padding: 15px 0;
+    margin: 0;
+    list-style: none;
 }
 
-.barra-marcas li {
-    display: inline;
-}
-
-.barra-marcas a {
-    text-decoration: none;
+#barra-marcas a {
     color: white;
     font-size: 18px;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: 0.3s;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.barra-marcas a:hover {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
+#barra-marcas a:hover {
+    color: white;
 }
 
-/* Ajuste para evitar que la barra cubra el contenido */
-.fondo {
-    padding-top: 60px; /* Agrega espacio para que no se superponga con la barra */
+
+/* Menú hamburguesa solo visible en móviles */
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    color: rgb(15, 14, 14);
+    cursor: pointer;
+    position: absolute;
+  top: 1rem;         /* distancia desde el borde superior */
+  right: 1rem;       /* lo alinea a la derecha */
+    z-index: 101;
 }
-.navbar {
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px; /* Ajusta el tamaño */
-    font-weight: 700; /* Negrita para más impacto */
-    text-transform: uppercase; /* Mayúsculas para más agresividad */
-    letter-spacing: 1px; /* Espaciado para más presencia */
-    color: white; /* Asegurar buena visibilidad */
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #barra-marcas ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #barra-marcas ul.show {
+        display: flex;
+    }
 }
 /* Mensaje pequeño sobre el footer */
 .mensaje-footer {
