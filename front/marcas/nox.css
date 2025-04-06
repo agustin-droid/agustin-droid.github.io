@@ -280,3 +280,10 @@ body {
         display: flex;
     }
 }
+.info-producto p {
+    font-weight: normal;
+}
+
+.info-producto strong {
+    font-weight: bold;
+}
