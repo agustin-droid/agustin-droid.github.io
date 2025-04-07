@@ -242,7 +242,31 @@ body {
 #barra-marcas a:hover {
     color: white;
 }
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 50px; /* Aumentá este valor para hacerlas más grandes */
+    cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+    transition: transform 0.2s;
+}
 
+.nav-btn:hover {
+    transform: translateY(-50%) scale(1.2);
+}
+
+#prev {
+    left: 30px;
+}
+
+#next {
+    right: 30px;
+}
 
 /* Menú hamburguesa solo visible en móviles */
 .menu-toggle {
