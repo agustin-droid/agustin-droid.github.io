@@ -96,6 +96,21 @@ const productos = [
              "/front/paletas/nox/genius/foto11.webp"
          ]
      },
+     {
+        id: 109,
+        marca: "Nox",
+        nombre: "Nox TL10 Quantum Cobalt 12K 25",
+        precio: 440000,
+        tipo: "Control",
+        materiales: ["Carbono 12K", "Núcleo HR3 Black Eva"],
+        rugosidad: "Arenosa (Sandpaper Rough Surface)",
+        descripcion: "Paleta de formato redondo diseñada en colaboración con Agustín Tapia, ideal para jugadores que buscan control y precisión con excelente salida de bola.",
+        imagenes: [
+            "/front/paletas/nox/quantum/foto5.webp",
+            "/front/paletas/nox/quantum/foto6.webp",
+            "/front/paletas/nox/quantum/foto7.webp"
+        ]
+    },
     {
         id: 105,  // ID siguiente en la secuencia
         marca: "Nox",
