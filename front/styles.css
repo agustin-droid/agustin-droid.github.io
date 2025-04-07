@@ -79,15 +79,18 @@ body, html {
 /* Menú hamburguesa solo visible en móviles */
 .menu-toggle {
     display: none;
-    position: static; /* para mantenerlo alineado a la izquierda */
+    position: absolute;
     top: 15px;
     right: 20px;
     font-size: 28px;
     color: rgb(250, 245, 245);
     cursor: pointer;
+    position: static; /* para mantenerlo alineado a la izquierda */
   top: 1rem;         /* distancia desde el borde superior */
   right: 1rem;       /* lo alinea a la derecha */
     z-index: 101;
+    margin-left: 20px;
+
 }
 
 /* Responsive */
