@@ -23,6 +23,21 @@ const productos = [
             "/front/paletas/bolsos/foto6.webp"
         ]
     },
+    
+    {
+        id: 905,
+        marca: "Bullpadel",
+        nombre: "Mochila Bullpadel XPLO Rojo",
+        precio: 122000,
+        tipo: "mochila",
+        descripcion: "La mochila Bullpadel XPLO Rojo de Bullpadel combina diseño moderno y funcionalidad, ideal para llevar todo tu equipamiento de pádel cómodamente.",
+        imagenes: [
+            "/front/paletas/bolsos/foto21.webp",
+            "/front/paletas/bolsos/foto22.webp",
+            "/front/paletas/bolsos/foto23.webp"
+
+        ]
+    },
     {
         id: 902,
         marca: "Dropshot",
@@ -37,6 +52,20 @@ const productos = [
 
         ]
     },
+    
+    {
+        id: 906,
+        marca: "Bullpadel",
+        nombre: "Bolso Bullpadel Next Bag Naranja",
+        precio: 172000,
+        tipo: "bolso",
+        descripcion: "El bolso Bullpadel Next Bag Naranja de Bullpadel ofrece gran capacidad y resistencia, ideal para jugadores exigentes que buscan rendimiento y estilo.",
+        imagenes: [
+            "/front/paletas/bolsos/foto25.webp",
+            "/front/paletas/bolsos/foto26.webp"
+        ]
+    }
+    ,
     {
         id: 903,
         marca: "Varlion",
@@ -63,34 +92,7 @@ const productos = [
 
 
         ]
-    },
-    {
-        id: 905,
-        marca: "Bullpadel",
-        nombre: "Mochila Bullpadel XPLO Rojo",
-        precio: 122000,
-        tipo: "mochila",
-        descripcion: "La mochila Bullpadel XPLO Rojo de Bullpadel combina diseño moderno y funcionalidad, ideal para llevar todo tu equipamiento de pádel cómodamente.",
-        imagenes: [
-            "/front/paletas/bolsos/foto21.webp",
-            "/front/paletas/bolsos/foto22.webp",
-            "/front/paletas/bolsos/foto23.webp"
-
-        ]
-    },
-    {
-        id: 906,
-        marca: "Bullpadel",
-        nombre: "Bolso Bullpadel Next Bag Naranja",
-        precio: 172000,
-        tipo: "bolso",
-        descripcion: "El bolso Bullpadel Next Bag Naranja de Bullpadel ofrece gran capacidad y resistencia, ideal para jugadores exigentes que buscan rendimiento y estilo.",
-        imagenes: [
-            "/front/paletas/bolsos/foto25.webp",
-            "/front/paletas/bolsos/foto26.webp"
-        ]
     }
-    
 ];
 
 
@@ -223,5 +225,8 @@ function inicializarModal(productosFiltrados) {
         }
     });
 }
+
+
+
 
 
