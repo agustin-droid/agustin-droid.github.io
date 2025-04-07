@@ -79,7 +79,6 @@ body, html {
 /* Menú hamburguesa solo visible en móviles */
 .menu-toggle {
     display: none;
-    position: absolute;
     top: 15px;
     right: 20px;
     font-size: 28px;
