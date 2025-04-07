@@ -85,7 +85,7 @@ body, html {
     font-size: 28px;
     color: rgb(253, 253, 253);
     cursor: pointer;
-    position: absolute;
+    position: static; /* para mantenerlo alineado a la izquierda */
   top: 1rem;         /* distancia desde el borde superior */
   right: 1rem;       /* lo alinea a la derecha */
     z-index: 101;
