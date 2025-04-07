@@ -257,6 +257,8 @@ body {
   top: 1rem;         /* distancia desde el borde superior */
   right: 1rem;       /* lo alinea a la derecha */
     z-index: 101;
+    margin-left: 20px;
+
 }
 
 /* Responsive */
