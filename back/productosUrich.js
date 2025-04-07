@@ -31,6 +31,22 @@ const productos = [
 
         ]
     },
+    
+    {
+        id: 305,
+        marca: "Urich",
+        nombre: "Urich Fusion Armor 25",
+        precio: 167000,
+        tipo: "Control",
+        materiales: ["Fibra de vidrio", "Goma EVA Soft"],
+        rugosidad: "Lisa",
+        descripcion: "Modelo balanceado orientado al control y la manejabilidad. Ideal para jugadores en desarrollo que priorizan precisión y confort en cada golpe.",
+        imagenes: [
+            "/front/paletas/urich/fusion/foto13.webp",
+            "/front/paletas/urich/fusion/foto14.webp",
+            "/front/paletas/urich/fusion/foto15.webp",
+        ]
+    },
     {
         id: 302,
         marca: "Urich",
@@ -60,6 +76,22 @@ const productos = [
             "/front/paletas/urich/otros/foto6.webp",
             "/front/paletas/urich/otros/foto7.webp"
         ]
+    }
+    ,
+    {
+        id: 304,
+        marca: "Urich",
+        nombre: "Urich Fusion Hard V 25",
+        precio: 205000,
+        tipo: "Potencia",
+        materiales: ["Carbono 3K", "Goma EVA Hard"],
+        rugosidad: "Lisa",
+        descripcion: "Paleta pensada para jugadores ofensivos que buscan potencia en cada golpe. Su goma EVA dura y el carbono 3K le otorgan mayor firmeza para remates agresivos.",
+        imagenes: [
+            "/front/paletas/urich/fusion/foto9.webp",
+            "/front/paletas/urich/fusion/foto10.webp",
+            "/front/paletas/urich/fusion/foto11.webp",
+        ]
     },
     {
         id: 309,
@@ -71,7 +103,10 @@ const productos = [
         rugosidad: "Rough Surface",
         descripcion: "Paleta equilibrada que ofrece un gran control y una excelente salida de bola.",
         imagenes: [
-            "/front/paletas/urich/fusion/foto5.webp"
+            "/front/paletas/urich/fusion/foto5.webp",
+            "/front/paletas/urich/fusion/foto6.webp",
+            "/front/paletas/urich/fusion/foto7.webp"
+
         ]
     },
     {
@@ -106,6 +141,7 @@ const productos = [
         ]
     }
 ];
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
