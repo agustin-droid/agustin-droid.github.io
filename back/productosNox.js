@@ -7,7 +7,7 @@ const productos = [
         precio: 187000,
         tipo: "Control",
         materiales: ["Fibra de vidrio", "Goma EVA"],
-        rugosidad: "sí",
+        rugosidad: "no",
         descripcion: "Diseñada para control y maniobrabilidad con forma redonda y balance bajo.",
         imagenes: [
             "/front/paletas/nox/otros/foto9.webp",
@@ -101,7 +101,7 @@ const productos = [
         precio: 355000,
         tipo: "Control",
         materiales: ["Carbono", "Goma HR3"],
-        rugosidad: "sí",
+        rugosidad: "Rough Surface",
         descripcion: "Paleta de control con núcleo HR3 y acabado rugoso para mayor efecto.",
         imagenes: [
             "/front/paletas/nox/otros/foto13.webp",
