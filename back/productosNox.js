@@ -1,6 +1,21 @@
 
 const productos = [
     {
+        id: 110,
+        marca: "Nox",
+        nombre: "Paleta Nox Silhouette 23",
+        precio: 187000,
+        tipo: "Control",
+        materiales: ["Fibra de vidrio", "Goma EVA"],
+        rugosidad: "sí",
+        descripcion: "Diseñada para control y maniobrabilidad con forma redonda y balance bajo.",
+        imagenes: [
+            "/front/paletas/nox/otros/foto9.webp",
+            "/front/paletas/nox/otros/foto10.webp",
+            "/front/paletas/nox/otros/foto11.webp"
+        ]
+    },
+    {
         id: 100,
         marca: "Nox",
         nombre: "Nox ML10 Pro Cup Rough Surface 23",
@@ -47,8 +62,7 @@ const productos = [
             "/front/paletas/nox/otros/foto7.webp"
 
         ]
-    }
-,        
+    },        
      {
         id: 104,  // ID siguiente en la secuencia
         marca: "Nox",
@@ -65,7 +79,6 @@ const productos = [
 
         ]
     },
-    
     {
          id: 107, // Ajusta el ID según tu numeración
          marca: "Nox",
@@ -82,6 +95,21 @@ const productos = [
          ]
      },
      {
+        id: 111,
+        marca: "Nox",
+        nombre: "Paleta Nox VK10 Luxury Series 23",
+        precio: 355000,
+        tipo: "Control",
+        materiales: ["Carbono", "Goma HR3"],
+        rugosidad: "sí",
+        descripcion: "Paleta de control con núcleo HR3 y acabado rugoso para mayor efecto.",
+        imagenes: [
+            "/front/paletas/nox/otros/foto13.webp",
+            "/front/paletas/nox/otros/foto14.webp",
+            "/front/paletas/nox/otros/foto15.webp",
+        ]
+    },
+     {
          id: 108, 
          marca: "Nox",
          nombre: "Nox AT10 Genius 18K 24",
@@ -96,7 +124,7 @@ const productos = [
              "/front/paletas/nox/genius/foto11.webp"
          ]
      },
-     {
+    {
         id: 109,
         marca: "Nox",
         nombre: "Nox TL10 Quantum Cobalt 12K 25",
@@ -126,9 +154,7 @@ const productos = [
             "/front/paletas/nox/quantum/foto3.webp"
 
         ]
-    }
-    ,
-    
+    },
     {
         id: 101,
         marca: "Nox",
@@ -161,6 +187,8 @@ const productos = [
         ]
     }
 ];
+
+
 
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -79,6 +79,21 @@ const productos = [
     }
     ,
     {
+        id: 310,
+        marca: "Urich",
+        nombre: "Paleta Urich Fusion Hard 25",
+        precio: 205000,
+        tipo: "Potencia",
+        materiales: ["Carbono", "EVA Soft Black"],
+        rugosidad: "Lija",
+        descripcion: "Paleta de potencia con superficie rugosa tipo lija para mayor efecto.",
+        imagenes: [
+            "/front/paletas/urich/fusion/foto17.webp",
+            "/front/paletas/urich/fusion/foto18.webp",
+            "/front/paletas/urich/fusion/foto19.webp"
+        ]
+    },
+    {
         id: 304,
         marca: "Urich",
         nombre: "Urich Fusion Hard V 25",
@@ -97,7 +112,7 @@ const productos = [
         id: 309,
         marca: "Urich",
         nombre: "Urich Fusion 3K Flex 25",
-        precio: 202000,
+        precio: 205000,
         tipo: "Control",
         materiales: ["Carbono 3K", "Eva Soft"],
         rugosidad: "Rough Surface",
@@ -124,7 +139,7 @@ const productos = [
             "/front/paletas/urich/otros/foto11.webp"
 
         ]
-    },
+    }/*,
     {
         id: 300,
         marca: "Urich",
@@ -139,9 +154,8 @@ const productos = [
             "/front/paletas/urich/otros/foto14.webp",
             "/front/paletas/urich/otros/foto15.webp"
         ]
-    }
+    }*/
 ];
-
 
 
 document.addEventListener("DOMContentLoaded", function () {
