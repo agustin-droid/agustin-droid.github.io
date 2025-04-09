@@ -1,5 +1,19 @@
 const productos = [
     {
+        id: 405,
+        marca: "Kelme",
+        nombre: "Paleta Kelme Mastin",
+        precio: 130000,
+        tipo: "Control",
+        materiales: ["Fibra de vidrio", "Goma EVA Soft"],
+        rugosidad: "Lija",
+        descripcion: "Paleta de control ideal para jugadores en desarrollo.",
+        imagenes: [
+            "/front/paletas/kelme/foto21.webp",
+            "/front/paletas/kelme/foto22.webp"
+        ]
+    },
+    {
         id: 400,
         marca: "Kelme",
         nombre: "Kelme Cheetah",
@@ -41,6 +55,21 @@ const productos = [
             "/front/paletas/Kelme/foto10.webp"
         ]
     },
+    
+{
+    id: 406,
+    marca: "Kelme",
+    nombre: "Paleta Kelme Lion",
+    precio: 182500,
+    tipo: "Potencia",
+    materiales: ["Carbono", "Goma EVA Soft"],
+    rugosidad: "Rough Surface",
+    descripcion: "Paleta potente con rugosidad para generar más efecto.",
+    imagenes: [
+        "/front/paletas/Kelme/foto25.webp",
+            "/front/paletas/Kelme/foto26.webp"
+    ]
+},
     {
         id: 403,
         marca: "Kelme",
@@ -70,9 +99,6 @@ const productos = [
         ]
     }
 ];
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
     mostrarProductos("Kelme");
