@@ -60,7 +60,7 @@ const productos = [
             "/front/paletas/bull/ionic 23/foto3.webp"
 
         ]
-    },
+    },/*
     {
         id: 13,
         marca: "Bullpadel",
@@ -91,7 +91,7 @@ const productos = [
             "/front/paletas/bull/vertex 04 24/foto18.webp",
             "/front/paletas/bull/vertex 04 24/foto19.webp"
         ]
-    },
+    }*/,
     {
         id: 1,
         marca: "Bullpadel",
@@ -129,7 +129,7 @@ const productos = [
         id: 2,
         marca: "Bullpadel",
         nombre: "Bullpadel Hack 03 23",
-        precio: 340000,
+        precio: 345000,
         tipo: "Control",
         materiales: ["Carbono", "MultiEva"],
         rugosidad: "Top Spin",
@@ -145,7 +145,7 @@ const productos = [
         id: 9,
         marca: "Bullpadel",
         nombre: "Bullpadel Hack 03 Hybrid 24",
-        precio: 360000,
+        precio: 365000,
         tipo: "Control",
         materiales: ["Carbono", "MultiEva"],
         rugosidad: "Top Spin",
@@ -160,7 +160,7 @@ const productos = [
         id: 10,
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 Hybrid 24",
-        precio: 360000,
+        precio: 365000,
         tipo: "Potencia",
         materiales: ["XT-Carbon 12K", "MultiEva"],
         rugosidad: "Top Spin",
@@ -193,7 +193,7 @@ const productos = [
         id: 16, 
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 Comfort 25",
-        precio: 390000,
+        precio: 385000,
         tipo: "Comfort",
         materiales: ["Carbono", "Eva Soft"],
         rugosidad: "sin cara especial",
@@ -265,7 +265,7 @@ const productos = [
             "/front/paletas/bull/tf/foto26.webp",
             "/front/paletas/bull/tf/foto27.webp"
         ]
-    },
+    },/*
     {
         id: 26,
         marca: "Bullpadel",
@@ -280,7 +280,7 @@ const productos = [
             "/front/paletas/bull/tf/foto30.webp",
             "/front/paletas/bull/tf/foto31.webp"
         ]
-    },
+    }*/,
     {
         id: 3,
         marca: "Bullpadel",
@@ -317,7 +317,7 @@ const productos = [
         id: 8,
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 2025",
-        precio: 530000,
+        precio: 515000,
         tipo: "Potencia",
         materiales: ["XT-Carbon 12K", "MultiEva"],
         rugosidad: "Top Spin",
@@ -333,7 +333,7 @@ const productos = [
         id: 19,
         marca: "Bullpadel",
         nombre: "Bullpadel Hack 04 TF 24",
-        precio: 535000,
+        precio: 530000,
         tipo: "Potencia",
         materiales: ["Carbono 12K", "Eva Hard"],
         rugosidad: "Rough Surface",
@@ -348,7 +348,7 @@ const productos = [
         id: 20,
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 TF 24",
-        precio: 535000,
+        precio: 530000,
         tipo: "Potencia",
         materiales: ["Carbono 12K", "Eva Hard"],
         rugosidad: "Rough Surface",
@@ -363,7 +363,7 @@ const productos = [
         id: 21,
         marca: "Bullpadel",
         nombre: "Bullpadel XPLO TF 24",
-        precio: 535000,
+        precio: 530000,
         tipo: "Control",
         materiales: ["Fibra de vidrio", "Eva Soft"],
         rugosidad: "sin cara especial",
@@ -378,7 +378,7 @@ const productos = [
         id: 22,
         marca: "Bullpadel",
         nombre: "Bullpadel Neuron TF 24",
-        precio: 535000,
+        precio: 530000,
         tipo: "Control",
         materiales: ["Carbono", "Eva Soft"],
         rugosidad: "Rough Surface",
@@ -391,7 +391,6 @@ const productos = [
     }
     
 ];
-
 
 document.addEventListener("DOMContentLoaded", function () {
     mostrarProductos("Bullpadel");
