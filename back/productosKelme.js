@@ -100,6 +100,9 @@ const productos = [
     }
 ];
 
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     mostrarProductos("Kelme");
 });
