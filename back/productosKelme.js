@@ -1,5 +1,5 @@
 const productos = [
-    {
+   /* {
         id: 405,
         marca: "Kelme",
         nombre: "Paleta Kelme Mastin",
@@ -12,7 +12,7 @@ const productos = [
             "/front/paletas/kelme/foto21.webp",
             "/front/paletas/kelme/foto22.webp"
         ]
-    },
+    },*/
     {
         id: 400,
         marca: "Kelme",
