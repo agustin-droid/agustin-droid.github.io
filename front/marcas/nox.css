@@ -247,9 +247,9 @@ body {
 /* Menú hamburguesa solo visible en móviles */
 .menu-toggle {
     display: none;
-    position: static; /* para mantenerlo alineado a la izquierda */
-    top: 15px;
-    right: 20px;
+    position: absolute;       /* Permite posicionarlo respecto al contenedor */
+    top: 1rem;                /* Separación del borde superior */
+    left: 1rem;               /* Separación del borde izquierdo */
     font-size: 28px;
     color: rgb(15, 14, 14);
     cursor: pointer;

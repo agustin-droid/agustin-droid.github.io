@@ -268,21 +268,20 @@ body {
     right: 30px;
 }
 
+
 /* Menú hamburguesa solo visible en móviles */
 .menu-toggle {
     display: none;
-    position: absolute;
-    top: 15px;
-    right: 20px;
+    position: absolute;       /* Permite posicionarlo respecto al contenedor */
+    top: 1rem;                /* Separación del borde superior */
+    left: 1rem; 
     font-size: 28px;
     color: rgb(15, 14, 14);
     cursor: pointer;
-    position: static; /* para mantenerlo alineado a la izquierda */
+    position: absolute;
   top: 1rem;         /* distancia desde el borde superior */
   right: 1rem;       /* lo alinea a la derecha */
     z-index: 101;
-    margin-left: 20px;
-
 }
 
 /* Responsive */
@@ -301,40 +300,14 @@ body {
         width: 100%;
         padding: 10px 0;
     }
-    .nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 50px; /* Aumentá este valor para hacerlas más grandes */
-    cursor: pointer;
-    z-index: 1001;
-    padding: 10px;
-    transition: transform 0.2s;
-}
 
-.nav-btn:hover {
-    transform: translateY(-50%) scale(1.2);
-}
-
-#prev {
-    left: 30px;
-}
-
-#next {
-    right: 30px;
+    #barra-marcas ul.show {
+        display: flex;
+    }
 }
 @media (max-width: 768px) {
     .nav-btn {
         color: black;
         text-shadow: 1px 1px 2px white; /* Opcional: mejora visibilidad sobre fondo claro */
-    }
-}
-
-
-    #barra-marcas ul.show {
-        display: flex;
     }
 }
