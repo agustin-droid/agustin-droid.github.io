@@ -1,20 +1,6 @@
 
 const productos = [
-    {
-        id: 110,
-        marca: "Nox",
-        nombre: "Paleta Nox Silhouette 23",
-        precio: 187000,
-        tipo: "Control",
-        materiales: ["Fibra de vidrio", "Goma EVA"],
-        rugosidad: "no",
-        descripcion: "Diseñada para control y maniobrabilidad con forma redonda y balance bajo.",
-        imagenes: [
-            "/front/paletas/nox/otros/foto9.webp",
-            "/front/paletas/nox/otros/foto10.webp",
-            "/front/paletas/nox/otros/foto11.webp"
-        ]
-    },
+    
     {
         id: 100,
         marca: "Nox",
@@ -28,22 +14,6 @@ const productos = [
             "/front/paletas/nox/ml10/foto1.webp",
             "/front/paletas/nox/ml10/foto2.webp",
             "/front/paletas/nox/ml10/foto3.webp"
-
-        ]
-    },
-    {
-        id: 102,
-        marca: "Nox",
-        nombre: "Nox Equation Advanced Lady 24",
-        precio: 215000,
-        tipo: "Control",
-        materiales: ["Fibra de vidrio", "HR3 Core"],
-        descripcion: "Paleta ligera y manejable, ideal para jugadoras avanzadas que buscan precisión.",
-        rugosidad: "sin cara especial",
-        imagenes: [
-            "/front/paletas/nox/equation/foto1.webp",
-            "/front/paletas/nox/equation/foto2.webp",
-            "/front/paletas/nox/equation/foto3.webp"
 
         ]
     },
