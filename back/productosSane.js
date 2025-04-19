@@ -16,6 +16,23 @@ const productos = [
         ]
     },
     {
+        id: 606,
+        marca: "Sane",
+        nombre: "Sane Impronta 3K",
+        precio: 157000,
+        tipo: "Control",
+        materiales: ["Carbono 3K", "Eva Compact"],
+        rugosidad: "Lisa",
+        descripcion: "Paleta blanda y manejable para control preciso.",
+        imagenes: [
+            "/front/paletas/sane/otros/foto1.webp",
+            "/front/paletas/sane/otros/foto2.webp",
+            "/front/paletas/sane/otros/foto3.webp"
+
+
+        ]
+    },
+    {
         id: 601,
         marca: "Sane",
         nombre: "Sane Elis 2",
@@ -31,6 +48,36 @@ const productos = [
         ]
     },
     {
+        id: 607,
+        marca: "Sane",
+        nombre: "Sane Assassin Black II",
+        precio: 175000,
+        tipo: "Potencia",
+        materiales: ["Carbono 12K", "Goma Eva Soft"],
+        rugosidad: "Lisa",
+        descripcion: "Potencia equilibrada con salida de bola cómoda.",
+        imagenes: [
+            "/front/paletas/sane/assasin/foto9.webp",
+            "/front/paletas/sane/assasin/foto10.webp",
+            "/front/paletas/sane/assasin/foto11.webp"
+        ]
+    },
+    {
+        id: 608,
+        marca: "Sane",
+        nombre: "Sane Assassin Legend II",
+        precio: 185000,
+        tipo: "Potencia",
+        materiales: ["Carbono Textreme", "Goma Eva Soft"],
+        rugosidad: "Lisa",
+        descripcion: "Modelo ofensivo con excelente pegada.",
+        imagenes: [
+            "/front/paletas/sane/assasin/foto13.webp",
+            "/front/paletas/sane/assasin/foto14.webp",
+            "/front/paletas/sane/assasin/foto15.webp"
+        ]
+    },
+    {
         id: 600,
         marca: "Sane",
         nombre: "Sane Agressor VII Black",
@@ -43,6 +90,21 @@ const productos = [
             "/front/paletas/sane/agressor/foto1.webp",
             "/front/paletas/sane/agressor/foto2.webp",
             "/front/paletas/sane/agressor/foto3.webp"
+        ]
+    },
+    {
+        id: 609,
+        marca: "Sane",
+        nombre: "Sane Fussion Alpha",
+        precio: 255000,
+        tipo: "Control",
+        materiales: ["Carbono 3K", "Alutex", "Pro Reactive"],
+        rugosidad: "Lisa",
+        descripcion: "Paleta con Buen control y materiales de alta calidad.",
+        imagenes: [
+            "/front/paletas/sane/otros/foto5.webp",
+            "/front/paletas/sane/otros/foto6.webp",
+            "/front/paletas/sane/otros/foto7.webp"
         ]
     },
     {
@@ -226,5 +288,7 @@ function inicializarModal() {
         }
     });
 }
+
+
 
 
