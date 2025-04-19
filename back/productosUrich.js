@@ -6,7 +6,7 @@ const productos = [
         nombre: "Urich Fusion Soft 25",
         precio: 138000,
         tipo: "Control",
-        materiales: ["Carbono", "Eva Soft"],
+        materiales: ["Fibra de vidrio", "Eva Soft"],
         rugosidad: "Rough Surface",
         descripcion: "Paleta con excelente balance y control, ideal para jugadores que buscan precisión.",
         imagenes: [
