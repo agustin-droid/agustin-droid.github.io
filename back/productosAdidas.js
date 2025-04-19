@@ -36,7 +36,7 @@ const productos = [
         nombre: "Adidas Metalbone Series Rojo 24",
         precio: 276000,
         tipo: "Potencia",
-        materiales: ["Carbono", "Eva Soft Performance"],
+        materiales: ["Fibra de vidrio", "Eva Soft Performance"],
         rugosidad: "Cara arenosa",
         descripcion: "Potencia y estilo para jugadores agresivos.",
         imagenes: [            
