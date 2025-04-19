@@ -114,7 +114,7 @@ const productos = [
             "/front/paletas/bull/ionic 23/foto6.webp",
             "/front/paletas/bull/ionic 23/foto7.webp"
         ]
-    }
+    }/*
         ,{
         id: 11,
         marca: "Bullpadel",
@@ -129,7 +129,7 @@ const productos = [
             "/front/paletas/bull/vertex 04 24/foto6.webp",
             "/front/paletas/bull/vertex 04 24/foto7.webp"
         ]
-    },
+    }*/,
     {
         id: 9,
         marca: "Bullpadel",
