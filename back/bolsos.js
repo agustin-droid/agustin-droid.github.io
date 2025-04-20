@@ -90,7 +90,7 @@ const productos = [
             "/front/paletas/bolsos/foto39.webp"
         ]
     },
-    ,
+    
 {
     id: 911,
     marca: "Bullpadel",
