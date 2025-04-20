@@ -1,6 +1,5 @@
 
 const productos = [
-    
     {
         id: 100,
         marca: "Nox",
@@ -15,6 +14,21 @@ const productos = [
             "/front/paletas/nox/ml10/foto2.webp",
             "/front/paletas/nox/ml10/foto3.webp"
 
+        ]
+    },
+    {
+        id: 112,
+        marca: "Nox",
+        nombre: "Nox Equation Advanced 24",
+        precio: 215000,
+        tipo: "Control",
+        materiales: ["Carbono", "Fibra de vidrio", "Eva HR3"],
+        rugosidad: "Arenosa",
+        descripcion: "Paleta equilibrada para juego versátil.",
+        imagenes: [
+            "/front/paletas/nox/equation/foto5.webp",
+            "/front/paletas/nox/equation/foto6.webp",
+            "/front/paletas/nox/equation/foto7.webp"
         ]
     },
     {
@@ -126,6 +140,39 @@ const productos = [
         ]
     },
     {
+        id: 113,
+        marca: "Nox",
+        nombre: "Nox AT10 Genius Attack 18K 25",
+        precio: 460000,
+        tipo: "Potencia",
+        materiales: ["Carbono 18K", "Eva HR3"],
+        rugosidad: "Rough Surface",
+        descripcion: "Para jugadores agresivos que buscan potencia.",
+        imagenes: [
+            "/front/paletas/nox/genius/foto13.webp",
+            "/front/paletas/nox/genius/foto14.webp",
+            "/front/paletas/nox/genius/foto15.webp",
+            "/front/paletas/nox/genius/foto16.webp"
+
+        ]
+    },
+    {
+        id: 106, // Ajusta el ID según la numeración que estés usando
+        marca: "Nox",
+        nombre: "Nox AT10 Genius Attack 12K 25",
+        precio: 460000, // Completa con el precio correcto
+        tipo: "Potencia",
+        materiales: ["Carbono 12K", "Eva HR3"],
+        rugosidad: "Rough Surface", // Ajusta si es necesario
+        descripcion: "Paleta diseñada para jugadores que buscan potencia con una excelente salida de bola.",
+        imagenes: [
+            "/front/paletas/nox/genius/foto1.webp",
+            "/front/paletas/nox/genius/foto2.webp",
+            "/front/paletas/nox/genius/foto3.webp"
+
+        ]
+    },
+    {
         id: 101,
         marca: "Nox",
         nombre: "Nox AT10 Genius 12K 25",
@@ -140,26 +187,25 @@ const productos = [
             "/front/paletas/nox/genius/foto6.webp"
         ]
     },
+    
     {
-        id: 106, // Ajusta el ID según la numeración que estés usando
+        id: 112,
         marca: "Nox",
-        nombre: "Nox AT10 Genius Attack 12K 25",
-        precio: 470000, // Completa con el precio correcto
-        tipo: "Potencia",
-        materiales: ["Carbono 12K", "Eva HR3"],
-        rugosidad: "Rough Surface", // Ajusta si es necesario
-        descripcion: "Paleta diseñada para jugadores que buscan potencia con una excelente salida de bola.",
+        nombre: "Nox AT10 Genius 18K 25",
+        precio: 480000,
+        tipo: "Control",
+        materiales: ["Carbono 18K", "Eva HR3"],
+        rugosidad: "Rough Surface",
+        descripcion: "Modelo de control con tacto profesional.",
         imagenes: [
-            "/front/paletas/nox/genius/foto1.webp",
-            "/front/paletas/nox/genius/foto2.webp",
-            "/front/paletas/nox/genius/foto3.webp"
+            "/front/paletas/nox/genius/foto17.webp",
+            "/front/paletas/nox/genius/foto18.webp",
+            "/front/paletas/nox/genius/foto19.webp",
+            "/front/paletas/nox/genius/foto20.webp"
 
         ]
     }
 ];
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
     mostrarProductos("Nox");
