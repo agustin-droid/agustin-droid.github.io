@@ -1,18 +1,48 @@
 
 const productos = [
     {
+        id: 311,
+        marca: "Urich",
+        nombre: "Urich Iron Soft 25",
+        precio: 131000,
+        tipo: "Control",
+        materiales: ["Fibra de vidrio", "Eva Soft"],
+        rugosidad: "Lisa",
+        descripcion: "Cómoda y liviana, ideal para control.",
+        imagenes: [
+            "/front/paletas/urich/iron/foto1.webp",
+            "/front/paletas/urich/iron/foto2.webp",
+            "/front/paletas/urich/iron/foto3.webp"
+        ]
+    },
+    {
         id: 306,
         marca: "Urich",
         nombre: "Urich Fusion Soft 25",
         precio: 138000,
         tipo: "Control",
-        materiales: ["Fibra de vidrio", "Eva Soft"],
+        materiales: ["Carbono", "Eva Soft"],
         rugosidad: "Rough Surface",
         descripcion: "Paleta con excelente balance y control, ideal para jugadores que buscan precisión.",
         imagenes: [
             "/front/paletas/urich/fusion/foto1.webp",
             "/front/paletas/urich/fusion/foto2.webp",
             "/front/paletas/urich/fusion/foto3.webp"
+        ]
+    },
+    {
+        id: 312,
+        marca: "Urich",
+        nombre: "Urich Dropper Soft 25",
+        precio: 149000,
+        tipo: "Control",
+        materiales: ["Fibra de vidrio", "Eva Soft"],
+        rugosidad: "3D",
+        descripcion: "Buena salida de bola y confort.",
+        imagenes: [
+            "/front/paletas/urich/dropper/foto1.webp",
+            "/front/paletas/urich/dropper/foto2.webp",
+            "/front/paletas/urich/dropper/foto3.webp"
         ]
     },
     {
@@ -75,6 +105,21 @@ const productos = [
             "/front/paletas/urich/otros/foto5.webp",
             "/front/paletas/urich/otros/foto6.webp",
             "/front/paletas/urich/otros/foto7.webp"
+        ]
+    },
+    {
+        id: 313,
+        marca: "Urich",
+        nombre: "Urich Iron Hard 25",
+        precio: 182000,
+        tipo: "Potencia",
+        materiales: ["Fibra de vidrio", "Eva Hard"],
+        rugosidad: "Lisa",
+        descripcion: "Mayor rigidez para un juego ofensivo.",
+        imagenes: [
+            "/front/paletas/urich/iron/foto5.webp",
+            "/front/paletas/urich/iron/foto6.webp",
+            "/front/paletas/urich/iron/foto7.webp"
         ]
     }
     ,
@@ -284,3 +329,4 @@ function inicializarModal() {
         }
     });
 }
+
