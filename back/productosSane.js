@@ -38,7 +38,7 @@ const productos = [
         nombre: "Sane Elis 2",
         precio: 170000,
         tipo: "Control",
-        materiales: ["Fibra de Vidrio", "Goma EVA Soft"],
+        materiales: [" Carbono 12K", "Goma EVA Soft"],
         rugosidad: "Lisa",
         descripcion: "Ideal para jugadores que buscan control y manejabilidad, la Elis 2 combina un núcleo blando con materiales flexibles que absorben las vibraciones.",
         imagenes: [
