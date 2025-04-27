@@ -28,26 +28,9 @@ const productos = [
             "/front/paletas/sane/otros/foto1.webp",
             "/front/paletas/sane/otros/foto2.webp",
             "/front/paletas/sane/otros/foto3.webp"
-
-
         ]
     },
-    {
-        id: 601,
-        marca: "Sane",
-        nombre: "Sane Elis 2",
-        precio: 170000,
-        tipo: "Control",
-        materiales: [" Carbono 12K", "Goma EVA Soft"],
-        rugosidad: "Lisa",
-        descripcion: "Ideal para jugadores que buscan control y manejabilidad, la Elis 2 combina un núcleo blando con materiales flexibles que absorben las vibraciones.",
-        imagenes: [
-            "/front/paletas/sane/elis/foto1.webp",
-            "/front/paletas/sane/elis/foto2.webp",
-            "/front/paletas/sane/elis/foto3.webp"
-        ]
-    },
-    {
+        {
         id: 607,
         marca: "Sane",
         nombre: "Sane Assassin Black II",
@@ -63,10 +46,25 @@ const productos = [
         ]
     },
     {
+        id: 601,
+        marca: "Sane",
+        nombre: "Sane Elis 2",
+        precio: 180000,
+        tipo: "Control",
+        materiales: [" Carbono 12K", "Goma EVA Soft"],
+        rugosidad: "Lisa",
+        descripcion: "Ideal para jugadores que buscan control y manejabilidad, la Elis 2 combina un núcleo blando con materiales flexibles que absorben las vibraciones.",
+        imagenes: [
+            "/front/paletas/sane/elis/foto1.webp",
+            "/front/paletas/sane/elis/foto2.webp",
+            "/front/paletas/sane/elis/foto3.webp"
+        ]
+    },
+    {
         id: 608,
         marca: "Sane",
         nombre: "Sane Assassin Legend II",
-        precio: 185000,
+        precio: 195000,
         tipo: "Potencia",
         materiales: ["Carbono Textreme", "Goma Eva Soft"],
         rugosidad: "Lisa",
