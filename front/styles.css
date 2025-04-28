@@ -93,7 +93,6 @@ body, html {
 
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -108,6 +107,10 @@ body, html {
         top: 60px;
         width: 100%;
         padding: 10px 0;
+
+        /* 👇 Agrega esto para permitir scroll si es muy largo */
+        max-height: 80vh; /* máximo 80% de la altura de pantalla */
+        overflow-y: auto; /* activa el scroll vertical */
     }
 
     #barra-marcas ul.show {
