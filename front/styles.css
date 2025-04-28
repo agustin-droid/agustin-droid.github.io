@@ -103,14 +103,14 @@ body, html {
         flex-direction: column;
         align-items: center;
         background: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 60px;
+        position: fixed; /* CAMBIADO A FIXED */
+        top: 60px; /* debajo de la barra */
+        left: 0;
         width: 100%;
-        padding: 10px 0;
-
-        /* 👇 Agrega esto para permitir scroll si es muy largo */
-        max-height: 80vh; /* máximo 80% de la altura de pantalla */
-        overflow-y: auto; /* activa el scroll vertical */
+        height: calc(100vh - 60px); /* ocupa toda la pantalla restante */
+        overflow-y: auto; /* por si son muchas marcas */
+        padding: 80px 0 20px 0;
+        z-index: 99;
     }
 
     #barra-marcas ul.show {
