@@ -64,6 +64,19 @@ const productos = [
         ]
     },
     {
+        id: 913,
+        marca: "Bullpadel",
+        nombre: "Bolso Bullpadel Ionic Negro",
+        precio: 126000,
+        tipo: "bolso",
+        descripcion: "Diseño funcional con amplio espacio interior, ideal para transportar tu equipamiento deportivo.",
+        imagenes: [
+            "/front/paletas/bolsos/foto53.webp",
+            "/front/paletas/bolsos/foto54.webp",
+            "/front/paletas/bolsos/foto55.webp"
+        ]
+    },
+    {
         id: 902,
         marca: "Dropshot",
         nombre: "Bolso Dropshot Ambition Rojo",
@@ -88,6 +101,19 @@ const productos = [
             "/front/paletas/bolsos/foto37.webp",
             "/front/paletas/bolsos/foto38.webp",
             "/front/paletas/bolsos/foto39.webp"
+        ]
+    },
+    {
+        id: 914,
+        marca: "Bullpadel",
+        nombre: "Mochila Bullpadel Vertex Negro",
+        precio: 140000,
+        tipo: "mochila",
+        descripcion: "Mochila compacta y cómoda, perfecta para tus partidos o entrenamientos diarios.",
+        imagenes: [
+            "/front/paletas/bolsos/foto57.webp",
+            "/front/paletas/bolsos/foto58.webp",
+            "/front/paletas/bolsos/foto59.webp"
         ]
     },
     
@@ -129,6 +155,21 @@ const productos = [
         imagenes: [
             "/front/paletas/bolsos/foto25.webp",
             "/front/paletas/bolsos/foto26.webp"
+        ]
+    },
+    {
+        id: 915,
+        marca: "Bullpadel",
+        nombre: "Bolso Bullpadel Vertex Piedra",
+        precio: 190000,
+        tipo: "bolso",
+        descripcion: "Con gran capacidad y diseño moderno, este bolso es ideal para jugadores exigentes.",
+        imagenes: [
+            "/front/paletas/bolsos/foto61.webp",
+            "/front/paletas/bolsos/foto62.webp",
+            "/front/paletas/bolsos/foto63.webp",
+            "/front/paletas/bolsos/foto64.webp"
+
         ]
     }
     ,
@@ -304,6 +345,8 @@ function inicializarModal(productosFiltrados) {
         }
     });
 }
+
+
 
 
 
