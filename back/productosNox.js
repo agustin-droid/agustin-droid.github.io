@@ -92,22 +92,6 @@ const productos = [
             "/front/paletas/nox/otros/foto27.webp"
         ]
     },        
-     {
-        id: 104,  // ID siguiente en la secuencia
-        marca: "Nox",
-        nombre: "Nox VK10 Future 24",
-        precio: 275000,
-        tipo: "Control",
-        materiales: ["Carbono", "HR3 Core"],
-        descripcion: "Paleta versátil con gran control y excelente manejabilidad.",
-        rugosidad: "Rugoso 3D",
-        imagenes: [
-            "/front/paletas/nox/otros/foto1.webp",
-            "/front/paletas/nox/otros/foto2.webp",
-            "/front/paletas/nox/otros/foto3.webp"
-
-        ]
-    },
     {
          id: 107, // Ajusta el ID según tu numeración
          marca: "Nox",
