@@ -46,6 +46,51 @@ const productos = [
             "/front/paletas/nox/otros/foto7.webp"
 
         ]
+    },
+    {
+        id: 114,
+        marca: "Nox",
+        nombre: "Nox Future Control 12K 25",
+        precio: 345000,
+        tipo: "Control",
+        materiales: ["Carbono 12K", "Eva HR3"],
+        rugosidad: "Rough Surface",
+        descripcion: "Precisión y control con excelente salida de bola.",
+        imagenes: [
+            "/front/paletas/nox/otros/foto17.webp",
+            "/front/paletas/nox/otros/foto18.webp",
+            "/front/paletas/nox/otros/foto19.webp"
+        ]
+    },
+    {
+        id: 115,
+        marca: "Nox",
+        nombre: "Nox Future Hybrid 12K 25",
+        precio: 345000,
+        tipo: "Híbrida",
+        materiales: ["Carbono 12K", "Eva HR3"],
+        rugosidad: "Rough Surface",
+        descripcion: "Equilibrio perfecto entre potencia y control.",
+        imagenes: [
+            "/front/paletas/nox/otros/foto21.webp",
+            "/front/paletas/nox/otros/foto22.webp",
+            "/front/paletas/nox/otros/foto23.webp"
+        ]
+    },
+    {
+        id: 116,
+        marca: "Nox",
+        nombre: "Nox Future Attack 12K 25",
+        precio: 345000,
+        tipo: "Potencia",
+        materiales: ["Carbono 12K", "Eva HR3"],
+        rugosidad: "Rough Surface",
+        descripcion: "Diseñada para maximizar la potencia en cada golpe.",
+        imagenes:  [
+            "/front/paletas/nox/otros/foto25.webp",
+            "/front/paletas/nox/otros/foto26.webp",
+            "/front/paletas/nox/otros/foto27.webp"
+        ]
     },        
      {
         id: 104,  // ID siguiente en la secuencia
