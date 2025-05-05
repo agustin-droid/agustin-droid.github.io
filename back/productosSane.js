@@ -79,7 +79,7 @@ const productos = [
         id: 600,
         marca: "Sane",
         nombre: "Sane Agressor VII Black",
-        precio: 205000,
+        precio: 215000,
         tipo: "Potencia",
         materiales: ["Carbono 3K", "Goma EVA Soft"],
         rugosidad: "Lija",
