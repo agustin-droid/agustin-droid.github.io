@@ -37,7 +37,7 @@ const productos = [
         "nombre": "Nox AT Pro Cup Coorp 24",
         "precio": 268000,
         "tipo": "Híbrida",
-        "materiales": ["Carbono", "HR3 Core"],
+        "materiales": ["Fibra de vidrio aluminizada", "HR3 Core"],
         "descripcion": "Una paleta que combina la manejabilidad de la AT10 y la comodidad de la ML10. Su estructura de carbono y goma HR3 ofrecen gran durabilidad y control.",
         "rugosidad": "sin cara especial",
         "imagenes": [
