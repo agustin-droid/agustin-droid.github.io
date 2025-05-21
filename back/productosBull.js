@@ -144,7 +144,7 @@ const productos = [
             "/front/paletas/bull/hack 03/foto6.webp",
             "/front/paletas/bull/hack 03/foto7.webp"
         ]
-    },
+    },/*
     {
         id: 10,
         marca: "Bullpadel",
@@ -160,7 +160,7 @@ const productos = [
             "/front/paletas/bull/vertex 04 24/foto11.webp"
 
         ]
-    },
+    },*/
     {
         id: 14,
         marca: "Bullpadel",
@@ -196,7 +196,7 @@ const productos = [
         id: 16, 
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 Comfort 25",
-        precio: 385000,
+        precio: 390000,
         tipo: "Comfort",
         materiales: ["Fibrix", "Multieva"],
         rugosidad: "sin cara especial",
@@ -226,7 +226,7 @@ const productos = [
         id: 35,
         marca: "Bullpadel",
         nombre: "Bullpadel Hack 03 24",
-        precio: 405000,
+        precio: 415000,
         tipo: "Potencia",
         materiales: ["Tricarbon", "Multieva", "CustomWeight"],
         rugosidad: "Top Spin",
@@ -267,7 +267,7 @@ const productos = [
             "/front/paletas/bull/tf/foto18.webp",
             "/front/paletas/bull/tf/foto19.webp"
         ]
-    },
+    },/*
     {
         id: 3,
         marca: "Bullpadel",
@@ -283,7 +283,8 @@ const productos = [
             "/front/paletas/bull/vertex 04 24/foto3.webp"
 
         ]
-    },{
+    },*/
+    {
         id: 34,
         marca: "Bullpadel",
         nombre: "Bullpadel Hack 04 Hybrid 25",
