@@ -1,5 +1,5 @@
 const productos = [
-    
+   /* 
     {
         id: 604,
         marca: "Sane",
@@ -29,12 +29,12 @@ const productos = [
             "/front/paletas/sane/otros/foto2.webp",
             "/front/paletas/sane/otros/foto3.webp"
         ]
-    },
+    },*/
         {
         id: 607,
         marca: "Sane",
         nombre: "Sane Assassin Black II",
-        precio: 175000,
+        precio: 190000,
         tipo: "Potencia",
         materiales: ["Carbono 12K", "Goma Eva Soft"],
         rugosidad: "Lisa",
@@ -49,7 +49,7 @@ const productos = [
         id: 601,
         marca: "Sane",
         nombre: "Sane Elis 2",
-        precio: 180000,
+        precio: 190000,
         tipo: "Control",
         materiales: [" Carbono 12K", "Goma EVA Soft"],
         rugosidad: "Lisa",
@@ -64,7 +64,7 @@ const productos = [
         id: 608,
         marca: "Sane",
         nombre: "Sane Assassin Legend II",
-        precio: 195000,
+        precio: 200000,
         tipo: "Potencia",
         materiales: ["Carbono Textreme", "Goma Eva Soft"],
         rugosidad: "Lisa",
@@ -143,7 +143,7 @@ const productos = [
         id: 605,
         marca: "Sane",
         nombre: "Sane Cinetik 28",
-        precio: 400000,
+        precio: 410000,
         tipo: "Potencia",
         materiales: ["Carbono 24K", "Goma EVA Black"],
         rugosidad: "Lija",
