@@ -45,6 +45,21 @@ const productos = [
 
         ]
     },
+        {
+    id: 513,
+    marca: "Adidas",
+    nombre: "Adidas Adipower Light 3.3",
+    precio: 330000,
+    tipo: "Control",
+    materiales: ["Carbono aluminizado 24K", "Eva Soft Energy"],
+    rugosidad: "Spin Blade Mold",
+    descripcion: "Peso reducido para un control ligero con gran salida de bola.",
+    imagenes: [
+        "/front/paletas/adidas/light/foto1.webp",
+        "/front/paletas/adidas/light/foto2.webp",
+        "/front/paletas/adidas/light/foto3.webp",
+    ]
+},
     {
         id: 509,
         marca: "Adidas",
@@ -125,6 +140,22 @@ const productos = [
 
         ]
     },
+    {
+    id: 512,
+    marca: "Adidas",
+    nombre: "Adidas Metalbone Carbon CTRL 3.4",
+    precio: 440000,
+    tipo: "Control",
+    materiales: ["Carbono 6K", "Eva Soft Performance"],
+    rugosidad: "Spin Blade Decal",
+    descripcion: "Gran precisión con una estructura sólida.",
+    imagenes: [
+        "/front/paletas/adidas/metalbone/foto9.webp",
+        "/front/paletas/adidas/metalbone/foto10.webp",
+        "/front/paletas/adidas/metalbone/foto11.webp",
+                "/front/paletas/adidas/metalbone/foto12.webp"
+    ]
+},
     {
         id: 510,
         marca: "Adidas",
