@@ -1,5 +1,20 @@
 const productos = [
     {
+    id: 33,
+    marca: "Bullpadel",
+    nombre: "Bullpadel Onyx Control Woman 25",
+    precio: 140000,
+    tipo: "Control",
+    materiales: ["Fibra de vidrio", "Eva Soft"],
+    rugosidad: "Lisa",
+    descripcion: "Ligera y cómoda, ideal para jugadoras que buscan control.",
+    imagenes: [
+        "/front/paletas/bull/otros/foto20.webp",
+        "/front/paletas/bull/otros/foto21.webp",
+        "/front/paletas/bull/otros/foto22.webp"
+    ]
+},
+    {
         id: 28,
         marca: "Bullpadel",
         nombre: "Bullpadel Indiga Power 25",
@@ -114,7 +129,21 @@ const productos = [
             "/front/paletas/bull/ionic 23/foto6.webp",
             "/front/paletas/bull/ionic 23/foto7.webp"
         ]
-    }/*
+    },
+    {
+    id: 34,
+    marca: "Bullpadel",
+    nombre: "Bullpadel Ionic Light 25",
+    precio: 280000,
+    tipo: "Híbrida",
+    materiales: ["Carbono", "Fibrix", "Eva Soft"],
+    rugosidad: "Topspin",
+    descripcion: "Versátil y ligera, ideal para un juego equilibrado.",
+    imagenes: [
+        "/front/paletas/bull/ionic 23/foto9.webp",
+        "/front/paletas/bull/ionic 23/foto11.webp",
+        "/front/paletas/bull/ionic 23/foto10.webp"    ]
+}/*
         ,{
         id: 11,
         marca: "Bullpadel",
@@ -130,6 +159,22 @@ const productos = [
             "/front/paletas/bull/vertex 04 24/foto7.webp"
         ]
     }*/,
+     {
+        id: 2,
+        marca: "Bullpadel",
+        nombre: "Bullpadel Hack 03 23",
+        precio: 345000,
+        tipo: "Control",
+        materiales: ["Carbono", "MultiEva"],
+        rugosidad: "Top Spin",
+        descripcion: "Modelo diseñado para control con un balance medio.",
+        imagenes: [
+            "/front/paletas/bull/hack 03/foto1.jpg",
+            "/front/paletas/bull/hack 03/foto2.jpg",
+            "/front/paletas/bull/hack 03/foto3.webp"
+
+        ]
+    },
     {
         id: 9,
         marca: "Bullpadel",
