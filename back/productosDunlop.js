@@ -3,7 +3,7 @@ const productos = [
         id: 204,
         marca: "Dunlop",
         nombre: "Dunlop Inferno Carbon Elite",
-        precio: 158000,
+        precio: 148000,
         tipo: "Potencia",
         materiales: ["Carbono", "Eva Soft"],
         rugosidad: "sin cara especial",
@@ -14,7 +14,7 @@ const productos = [
             "/front/paletas/dunlop/otros/foto3.webp",
 
         ]
-    },
+    }/*,
     {
         id: 202,
         marca: "Dunlop",
@@ -78,7 +78,7 @@ const productos = [
             "/front/paletas/dunlop/galactica/foto3.webp"
 
         ]
-    }
+    }/*
 ];
 
 
