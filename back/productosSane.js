@@ -29,7 +29,7 @@ const productos = [
             "/front/paletas/sane/otros/foto2.webp",
             "/front/paletas/sane/otros/foto3.webp"
         ]
-    },*/
+    },
         {
         id: 607,
         marca: "Sane",
@@ -59,7 +59,7 @@ const productos = [
             "/front/paletas/sane/elis/foto2.webp",
             "/front/paletas/sane/elis/foto3.webp"
         ]
-    },
+    },*/
     {
         id: 608,
         marca: "Sane",
@@ -74,7 +74,7 @@ const productos = [
             "/front/paletas/sane/assasin/foto14.webp",
             "/front/paletas/sane/assasin/foto15.webp"
         ]
-    },
+    },/*
     {
         id: 600,
         marca: "Sane",
@@ -89,7 +89,7 @@ const productos = [
             "/front/paletas/sane/agressor/foto2.webp",
             "/front/paletas/sane/agressor/foto3.webp"
         ]
-    },
+    }*/,
     {
         id: 609,
         marca: "Sane",
@@ -105,6 +105,54 @@ const productos = [
             "/front/paletas/sane/otros/foto7.webp"
         ]
     },
+   {
+    id: 611,
+    marca: "Sane",
+    nombre: "Sane Agressor V",
+    precio: 300000,
+    tipo: "Potencia",
+    materiales: ["Carbono 12K", "Goma EVA Black"],
+    rugosidad: "Lija",
+    descripcion: "La quinta generación de la línea Agressor mantiene el ADN ofensivo con mejoras en maniobrabilidad y control. Ideal para quienes dominan el juego agresivo desde el fondo de la cancha.",
+    imagenes: [
+        "/front/paletas/sane/agressor/foto13.png",
+        "/front/paletas/sane/agressor/foto14.png",
+ 
+    ]
+},
+{
+    id: 612,
+    marca: "Sane",
+    nombre: "Sane Agressor IV",
+    precio: 300000,
+    tipo: "Potencia",
+    materiales: ["Carbono 3K", "Goma EVA Black"],
+    rugosidad: "Media",
+    descripcion: "Una versión previa pero todavía letal de la saga Agressor. Balance alto, formato diamante y una respuesta firme para jugadores de ataque que priorizan velocidad en cada golpe.",
+    imagenes: [
+           "/front/paletas/sane/agressor/foto17.png",
+        "/front/paletas/sane/agressor/foto18.png",
+    ]
+},
+
+        {
+    id: 610,
+    marca: "Sane",
+    nombre: "Sane Maximized Power Special Edition",
+    precio: 310000,
+    tipo: "Potencia",
+    materiales: ["Carbono 12K", "Goma EVA Soft"],
+    rugosidad: "Media",
+    descripcion: "Edición especial pensada para maximizar la potencia en cada golpe. Ideal para jugadores que buscan explosividad sin perder control, gracias a su balance alto y materiales de alto rendimiento.",
+    imagenes: [
+        "/front/paletas/sane/otros/foto9.png",
+        "/front/paletas/sane/otros/foto10.png",
+        "/front/paletas/sane/otros/foto11.png",
+
+    ]
+
+    
+},
     {
         id: 602,
         marca: "Sane",
@@ -122,6 +170,22 @@ const productos = [
             
         ]
     },
+   
+    {
+    id: 613,
+    marca: "Sane",
+    nombre: "Sane Agressor Evolution Hybrid Alpha",
+    precio: 390000,
+    tipo: "Polivalente",
+    materiales: ["Carbono 12K", "Goma EVA Black"],
+    rugosidad: "Lija",
+    descripcion: "Una paleta versátil que combina control y potencia. Su formato híbrido y balance medio ofrecen un rendimiento equilibrado, ideal para jugadores completos que dominan todas las zonas de la cancha.",
+    imagenes: [
+        "/front/paletas/sane/otros/foto13.png",
+        "/front/paletas/sane/otros/foto14.png",
+        "/front/paletas/sane/otros/foto15.png",
+    ]
+},
     {
         id: 603,
         marca: "Sane",
