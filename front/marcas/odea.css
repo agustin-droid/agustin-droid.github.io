@@ -203,33 +203,6 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-
-.nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 50px; /* Aumentá este valor para hacerlas más grandes */
-    cursor: pointer;
-    z-index: 1001;
-    padding: 10px;
-    transition: transform 0.2s;
-}
-
-.nav-btn:hover {
-    transform: translateY(-50%) scale(1.2);
-}
-
-#prev {
-    left: 30px;
-}
-
-#next {
-    right: 30px;
-}
-
 /* Estilo base para escritorio */
 #barra-marcas {
     position: fixed;
@@ -280,7 +253,6 @@ body {
     font-size: 28px;
     color: rgb(15, 14, 14);
     cursor: pointer;
-    position: absolute;
   top: 1rem;         /* distancia desde el borde superior */
   right: 1rem;       /* lo alinea a la derecha */
     z-index: 101;
@@ -311,7 +283,31 @@ body {
         display: flex;
     }
 }
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 50px; /* Aumentá este valor para hacerlas más grandes */
+    cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+    transition: transform 0.2s;
+}
 
+.nav-btn:hover {
+    transform: translateY(-50%) scale(1.2);
+}
+
+#prev {
+    left: 30px;
+}
+
+#next {
+    right: 30px;
+}
 @media (max-width: 768px) {
     .nav-btn {
         color: black;
