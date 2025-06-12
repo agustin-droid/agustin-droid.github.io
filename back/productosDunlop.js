@@ -78,7 +78,7 @@ const productos = [
             "/front/paletas/dunlop/galactica/foto3.webp"
 
         ]
-    }/*
+    }*/
 ];
 
 
