@@ -64,19 +64,6 @@ const productos = [
         ]
     },
     {
-        id: 913,
-        marca: "Bullpadel",
-        nombre: "Bolso Bullpadel Ionic Negro",
-        precio: 126000,
-        tipo: "bolso",
-        descripcion: "Diseño funcional con amplio espacio interior, ideal para transportar tu equipamiento deportivo.",
-        imagenes: [
-            "/front/paletas/bolsos/foto53.webp",
-            "/front/paletas/bolsos/foto54.webp",
-            "/front/paletas/bolsos/foto55.webp"
-        ]
-    },
-    {
         id: 902,
         marca: "Dropshot",
         nombre: "Bolso Dropshot Ambition Rojo",
@@ -101,6 +88,19 @@ const productos = [
             "/front/paletas/bolsos/foto37.webp",
             "/front/paletas/bolsos/foto38.webp",
             "/front/paletas/bolsos/foto39.webp"
+        ]
+    },
+    {
+        id: 913,
+        marca: "Bullpadel",
+        nombre: "Bolso Bullpadel Ionic Negro",
+        precio: 136000,
+        tipo: "bolso",
+        descripcion: "Diseño funcional con amplio espacio interior, ideal para transportar tu equipamiento deportivo.",
+        imagenes: [
+            "/front/paletas/bolsos/foto53.webp",
+            "/front/paletas/bolsos/foto54.webp",
+            "/front/paletas/bolsos/foto55.webp"
         ]
     },
     {
