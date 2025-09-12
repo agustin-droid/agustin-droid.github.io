@@ -66,7 +66,7 @@ const productos = [
   tipo: "Control",
   materiales: ["Carbono 12K (caras)", "Marco carbono 3K", "Goma EVA Soft / medio-blanda"],
   rugosidad: "Mate, 3D",
-  descripcion: "Pala redonda con balance bajo, diseñada para quienes priorizan control, precisión y regularidad desde el fondo de la pista. Excelente comodidad en golpes defensivos y efectos técnicos gracias a su superficie texturada. :contentReference[oaicite:2]{index=2}",
+  descripcion: "Pala redonda con balance bajo, diseñada para quienes priorizan control, precisión y regularidad desde el fondo de la pista. Excelente comodidad en golpes defensivos y efectos técnicos gracias a su superficie texturada.",
   imagenes: [
    "/front/paletas/siux/elite/foto1.webp",
    "/front/paletas/siux/elite/foto2.webp",
@@ -82,7 +82,7 @@ const productos = [
   tipo: "Potencia Controlada",
   materiales: ["Carbono 12K (caras)", "Marco carbono 3K", "Goma EVA Hard"],
   rugosidad: "3D",
-  descripcion: "Pala de gama Elite para jugadores ofensivos avanzados, con forma diamante y balance alto. Ofrece potencia considerable sin perder demasiado control, ideal para remates y víboras. Acabado mate con textura para mejorar el efecto. :contentReference[oaicite:1]{index=1}",
+  descripcion: "Pala de gama Elite para jugadores ofensivos avanzados, con forma diamante y balance alto. Ofrece potencia considerable sin perder demasiado control, ideal para remates y víboras. Acabado mate con textura para mejorar el efecto.}",
   imagenes: [
     "/front/paletas/siux/elite/foto13.webp",
         "/front/paletas/siux/elite/foto14.webp",
@@ -99,7 +99,7 @@ const productos = [
   tipo: "Control Profesional",
   materiales: ["Carbono 40K (caras)", "Marco carbono 3K", "Goma EVA Soft"],
   rugosidad: "Brillo, 3D",
-  descripcion: "Pala de alto nivel orientada al control máximo. Forma redonda y balance bajo para maniobrabilidad superior. Núcleo Soft que aporta tacto medio para golpes prolongados. Ideal para jugadores tácticos que requieren precisión sin renunciar a contundencia cuando es necesario. :contentReference[oaicite:3]{index=3}",
+  descripcion: "Pala de alto nivel orientada al control máximo. Forma redonda y balance bajo para maniobrabilidad superior. Núcleo Soft que aporta tacto medio para golpes prolongados. Ideal para jugadores tácticos que requieren precisión sin renunciar a contundencia cuando es necesario.",
   imagenes: [
     "/front/paletas/siux/pro/foto13.webp",
     "/front/paletas/siux/pro/foto14.webp",
@@ -133,7 +133,7 @@ const productos = [
   tipo: "Potencia",
   materiales: ["Carbono 24K (caras)", "Marco de carbono 3K", "Goma EVA Hard"],
   rugosidad: "3D",
-  descripcion: "Pala profesional con forma de diamante y balance alto, pensada para jugadores ofensivos que buscan potencia desde la red. Acabado brillante con textura 3D que favorece el efecto. Núcleo rígido para golpes explosivos. Referente: Leo Augsburger. :contentReference[oaicite:0]{index=0}",
+  descripcion: "Pala profesional con forma de diamante y balance alto, pensada para jugadores ofensivos que buscan potencia desde la red. Acabado brillante con textura 3D que favorece el efecto. Núcleo rígido para golpes explosivos. Referente: Leo Augsburger.",
   imagenes: [
     "/front/paletas/siux/pro/foto9.webp",
     "/front/paletas/siux/pro/foto10.webp",
@@ -288,4 +288,5 @@ function inicializarModal() {
         }
     });
 }
+
 
