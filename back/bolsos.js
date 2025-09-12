@@ -84,13 +84,28 @@ const productos = [
         id: 914,
         marca: "Bullpadel",
         nombre: "Mochila Bullpadel Vertex Negro",
-        precio: 140000,
+        precio: 145000,
         tipo: "mochila",
         descripcion: "Mochila compacta y cómoda, perfecta para tus partidos o entrenamientos diarios.",
         imagenes: [
             "/front/paletas/bolsos/foto57.webp",
             "/front/paletas/bolsos/foto58.webp",
             "/front/paletas/bolsos/foto59.webp"
+        ]
+    },
+       {
+        id: 917,
+        marca: "Bullpadel",
+        nombre: "Mochila Bullpadel hack Negro",
+        precio: 145000,
+        tipo: "mochila",
+        descripcion: "Mochila elegante y cómoda, perfecta para llevar a tus partidos o tu uso cotidiano.",
+        imagenes: [
+            "/front/paletas/bolsos/foto69.webp",
+            "/front/paletas/bolsos/foto70.webp",
+            "/front/paletas/bolsos/foto71.webp",
+            "/front/paletas/bolsos/foto72.webp"
+
         ]
     },
     
@@ -105,6 +120,21 @@ const productos = [
         "/front/paletas/bolsos/foto45.webp",
         "/front/paletas/bolsos/foto46.webp",
         "/front/paletas/bolsos/foto47.webp"
+    ]
+},
+{
+    id: 916,
+    marca: "Bullpadel",
+    nombre: "Bolso Bullpadel neuron Negro",
+    precio: 155000,
+    tipo: "bolso",
+    descripcion: "Con un diseño simple y sobrio, el bolso Bullpadel neuron Negro es ideal para aquellos jugadores que buscan elegancia al llegar a la cancha.",
+    imagenes: [
+        "/front/paletas/bolsos/foto65.webp",
+        "/front/paletas/bolsos/foto66.webp",
+        "/front/paletas/bolsos/foto67.webp",
+        "/front/paletas/bolsos/foto68.webp"
+
     ]
 },
     
@@ -322,6 +352,7 @@ function inicializarModal(productosFiltrados) {
         }
     });
 }
+
 
 
 
