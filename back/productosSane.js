@@ -44,12 +44,12 @@ const productos = [
             "/front/paletas/sane/assasin/foto10.webp",
             "/front/paletas/sane/assasin/foto11.webp"
         ]
-    },
+    },*/
     {
         id: 601,
         marca: "Sane",
         nombre: "Sane Elis 2",
-        precio: 190000,
+        precio: 195000,
         tipo: "Control",
         materiales: [" Carbono 12K", "Goma EVA Soft"],
         rugosidad: "Lisa",
@@ -59,7 +59,7 @@ const productos = [
             "/front/paletas/sane/elis/foto2.webp",
             "/front/paletas/sane/elis/foto3.webp"
         ]
-    },*/
+    },/*
     {
         id: 608,
         marca: "Sane",
@@ -74,7 +74,7 @@ const productos = [
             "/front/paletas/sane/assasin/foto14.webp",
             "/front/paletas/sane/assasin/foto15.webp"
         ]
-    },/*
+    },
     {
         id: 600,
         marca: "Sane",
@@ -153,6 +153,23 @@ const productos = [
 
     
 },
+{
+    id: 614,
+    marca: "Sane",
+    nombre: "Sane Potential Advanced Edition",
+    precio: 335000,
+    tipo: "Polivalente",
+    materiales: ["alutex", "Pro HDR", "carbono"],
+    rugosidad: "Lija",
+    descripcion: "Ultima tecnologia de Sane donde su formato indica ser la paleta con mayor punto dulce del mundo, solo para aquellos valientes que quieran probar algo distinto.",
+    imagenes: [
+        "/front/paletas/sane/otros/foto9.webp",
+        "/front/paletas/sane/otros/foto10.webp",
+        "/front/paletas/sane/otros/foto11.webp",
+        "/front/paletas/sane/otros/foto12.webp",
+    ]
+}
+,
     {
         id: 602,
         marca: "Sane",
@@ -350,6 +367,7 @@ function inicializarModal() {
         }
     });
 }
+
 
 
 
