@@ -1,28 +1,5 @@
 const productos = [
-    {
-        id: 900,
-        marca: "Bullpadel",
-        nombre: "Mochila Bullpadel Performance Marino",
-        precio: 80000,
-        tipo: "mochila",
-        descripcion: "La mochila Mochila Bullpadel Performance Marino de Bullpadel ofrece estilo, comodidad y funcionalidad para el día a día.",
-        imagenes: [
-            "/front/paletas/bolsos/foto1.webp", 
-            "/front/paletas/bolsos/foto2.webp"
-        ]
-    },
-    {
-        id: 901,
-        marca: "Bullpadel",
-        nombre: "Mochila Bullpadel Performance Ciruela",
-        precio: 80000,
-        tipo: "mochila",
-        descripcion: "La mochila Mochila Bullpadel Performance Ciruela de Bullpadel ofrece estilo, comodidad y funcionalidad para el día a día.",
-        imagenes: [
-            "/front/paletas/bolsos/foto5.webp",
-            "/front/paletas/bolsos/foto6.webp"
-        ]
-    },
+   
     {
         id: 907,
         marca: "Bullpadel",
@@ -39,7 +16,7 @@ const productos = [
         id: 912,
         marca: "Varlion",
         nombre: "Bolso Varlion Begins Marino",
-        precio: 96000,
+        precio: 98000,
         tipo: "bolso",
         descripcion: "El bolso Varlion Begins Marino ofrece practicidad y diseño deportivo para quienes buscan funcionalidad y elegancia.",
         imagenes: [
@@ -53,7 +30,7 @@ const productos = [
         id: 905,
         marca: "Bullpadel",
         nombre: "Mochila Bullpadel XPLO Rojo",
-        precio: 122000,
+        precio: 132000,
         tipo: "mochila",
         descripcion: "La mochila Bullpadel XPLO Rojo de Bullpadel combina diseño moderno y funcionalidad, ideal para llevar todo tu equipamiento de pádel cómodamente.",
         imagenes: [
@@ -67,7 +44,7 @@ const productos = [
         id: 902,
         marca: "Dropshot",
         nombre: "Bolso Dropshot Ambition Rojo",
-        precio: 130000,
+        precio: 135000,
         tipo: "bolso",
         descripcion: "El bolso Bolso Dropshot Ambition Rojo de Dropshot ofrece estilo, comodidad y funcionalidad para el día a día.",
         imagenes: [
@@ -81,7 +58,7 @@ const productos = [
         id: 909,
         marca: "Bullpadel",
         nombre: "Bolso Bullpadel Performance Ciruela",
-        precio: 130000,
+        precio: 135000,
         tipo: "bolso",
         descripcion: "Diseñado para el rendimiento, el bolso Bullpadel Performance Ciruela destaca por su durabilidad, amplio espacio y estilo moderno.",
         imagenes: [
@@ -94,7 +71,7 @@ const productos = [
         id: 913,
         marca: "Bullpadel",
         nombre: "Bolso Bullpadel Ionic Negro",
-        precio: 136000,
+        precio: 140000,
         tipo: "bolso",
         descripcion: "Diseño funcional con amplio espacio interior, ideal para transportar tu equipamiento deportivo.",
         imagenes: [
@@ -121,7 +98,7 @@ const productos = [
     id: 911,
     marca: "Bullpadel",
     nombre: "Bolso Bullpadel Casual Negro",
-    precio: 150000,
+    precio: 155000,
     tipo: "bolso",
     descripcion: "Con un diseño urbano y elegante, el bolso Bullpadel Casual Negro se adapta tanto a la cancha como al día a día.",
     imagenes: [
@@ -345,6 +322,7 @@ function inicializarModal(productosFiltrados) {
         }
     });
 }
+
 
 
 
