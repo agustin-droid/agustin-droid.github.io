@@ -26,6 +26,22 @@ const productos = [
         ]
     }
     ,
+        {
+        id: 917,
+        marca: "Bullpadel",
+        nombre: "Mochila Bullpadel ionic",
+        precio: 128500,
+        tipo: "mochila",
+        descripcion: "La mochila Bullpadel ionic es ideal para aquellos que buscan espacios amplios y comodidad para llegar a la cancha.",
+        imagenes: [
+            "/front/paletas/bolsos/foto73.webp",
+            "/front/paletas/bolsos/foto74.webp",
+            "/front/paletas/bolsos/foto75.webp",
+            "/front/paletas/bolsos/foto76.webp"
+
+
+        ]
+    },
     {
         id: 905,
         marca: "Bullpadel",
@@ -352,6 +368,7 @@ function inicializarModal(productosFiltrados) {
         }
     });
 }
+
 
 
 
