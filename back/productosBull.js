@@ -159,11 +159,46 @@ const productos = [
             "/front/paletas/bull/vertex 04 24/foto7.webp"
         ]
     }*/,
+    
+    {
+    id: 37,
+    marca: "Bullpadel",
+    nombre: "Bullpadel Ionic Power 25",
+    precio: 295000,
+    tipo: "Potencia",
+    materiales: ["Galphite", "Multi EVA"],
+    rugosidad: "3D Grain",
+    descripcion: "Pala con forma de diamante y balance medio-alto, orientada a jugadores que buscan un plus de potencia en el remate sin perder manejabilidad. Ofrece una buena salida de bola y sensación firme en el golpe.",
+    imagenes: [
+        "/front/paletas/bull/ionic 23/foto13.webp",
+        "/front/paletas/bull/ionic 23/foto14.webp",
+        "/front/paletas/bull/ionic 23/foto15.webp",
+        "/front/paletas/bull/ionic 23/foto16.webp"
+
+    ]
+},
+{
+    id: 38,
+    marca: "Bullpadel",
+    nombre: "Bullpadel Ionic Control 25",
+    precio: 295000,
+    tipo: "Control",
+    materiales: ["Galphite", "Multi EVA"],
+    rugosidad: "3D Grain",
+    descripcion: "Pala con forma redonda y balance bajo, enfocada en precisión y control de bola. Ideal para jugadores que buscan seguridad en la defensa y precisión en los golpes colocados, manteniendo buena manejabilidad.",
+    imagenes: [
+        "/front/paletas/bull/ionic 23/foto17.webp",
+        "/front/paletas/bull/ionic 23/foto18.webp",
+        "/front/paletas/bull/ionic 23/foto19.webp",
+        "/front/paletas/bull/ionic 23/foto20.webp"
+
+    ]
+},
      {
         id: 2,
         marca: "Bullpadel",
         nombre: "Bullpadel Hack 03 23",
-        precio: 345000,
+        precio: 300000,
         tipo: "Control",
         materiales: ["Carbono", "MultiEva"],
         rugosidad: "Top Spin",
@@ -565,3 +600,4 @@ function inicializarModal() {
         }
     });
 }
+
