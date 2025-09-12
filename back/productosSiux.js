@@ -68,10 +68,10 @@ const productos = [
   rugosidad: "Mate, 3D",
   descripcion: "Pala redonda con balance bajo, diseñada para quienes priorizan control, precisión y regularidad desde el fondo de la pista. Excelente comodidad en golpes defensivos y efectos técnicos gracias a su superficie texturada. :contentReference[oaicite:2]{index=2}",
   imagenes: [
-   "/front/paletas/siux/elite/1.webp",
-   "/front/paletas/siux/elite/2.webp",
-   "/front/paletas/siux/elite/3.webp",
-   "/front/paletas/siux/elite/4.webp"
+   "/front/paletas/siux/elite/foto1.webp",
+   "/front/paletas/siux/elite/foto2.webp",
+   "/front/paletas/siux/elite/foto3.webp",
+   "/front/paletas/siux/elite/foto4.webp"
   ]
 },
     {
@@ -84,7 +84,7 @@ const productos = [
   rugosidad: "3D",
   descripcion: "Pala de gama Elite para jugadores ofensivos avanzados, con forma diamante y balance alto. Ofrece potencia considerable sin perder demasiado control, ideal para remates y víboras. Acabado mate con textura para mejorar el efecto. :contentReference[oaicite:1]{index=1}",
   imagenes: [
-    "/front/paletas/siux/elite/13.webp",
+    "/front/paletas/siux/elite/foto13.webp",
         "/front/paletas/siux/elite/foto14.webp",
         "/front/paletas/siux/elite/foto15.webp",
         "/front/paletas/siux/elite/foto16.webp"
@@ -288,3 +288,4 @@ function inicializarModal() {
         }
     });
 }
+
