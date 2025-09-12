@@ -27,7 +27,7 @@ const productos = [
     }
     ,
         {
-        id: 917,
+        id: 918,
         marca: "Bullpadel",
         nombre: "Mochila Bullpadel ionic",
         precio: 128500,
@@ -368,6 +368,7 @@ function inicializarModal(productosFiltrados) {
         }
     });
 }
+
 
 
 
