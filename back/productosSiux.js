@@ -82,7 +82,7 @@ const productos = [
   tipo: "Potencia Controlada",
   materiales: ["Carbono 12K (caras)", "Marco carbono 3K", "Goma EVA Hard"],
   rugosidad: "3D",
-  descripcion: "Pala de gama Elite para jugadores ofensivos avanzados, con forma diamante y balance alto. Ofrece potencia considerable sin perder demasiado control, ideal para remates y víboras. Acabado mate con textura para mejorar el efecto.}",
+  descripcion: "Pala de gama Elite para jugadores ofensivos avanzados, con forma diamante y balance alto. Ofrece potencia considerable sin perder demasiado control, ideal para remates y víboras. Acabado mate con textura para mejorar el efecto.",
   imagenes: [
     "/front/paletas/siux/elite/foto13.webp",
         "/front/paletas/siux/elite/foto14.webp",
@@ -288,5 +288,6 @@ function inicializarModal() {
         }
     });
 }
+
 
 
