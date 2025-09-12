@@ -51,7 +51,7 @@ const productos = [
         id: 114,
         marca: "Nox",
         nombre: "Nox Future Control 12K 25",
-        precio: 345000,
+        precio: 355000,
         tipo: "Control",
         materiales: ["Carbono 12K", "Eva HR3"],
         rugosidad: "Rough Surface",
@@ -66,7 +66,7 @@ const productos = [
         id: 115,
         marca: "Nox",
         nombre: "Nox Future Hybrid 12K 25",
-        precio: 345000,
+        precio: 355000,
         tipo: "Híbrida",
         materiales: ["Carbono 12K", "Eva HR3"],
         rugosidad: "Rough Surface",
@@ -81,7 +81,7 @@ const productos = [
         id: 116,
         marca: "Nox",
         nombre: "Nox Future Attack 12K 25",
-        precio: 345000,
+        precio: 355000,
         tipo: "Potencia",
         materiales: ["Carbono 12K", "Eva HR3"],
         rugosidad: "Rough Surface",
@@ -96,7 +96,7 @@ const productos = [
          id: 107, // Ajusta el ID según tu numeración
          marca: "Nox",
          nombre: "Nox ML10 Pro Cup Luxury 24",
-         precio: 350000, // Completa con el precio correcto
+         precio: 360000, // Completa con el precio correcto
          tipo: "Control",
          materiales: ["Carbono", "Eva HR3"],
          rugosidad: "Rough Surface", // Ajusta si es necesario
@@ -106,7 +106,7 @@ const productos = [
              "/front/paletas/nox/ml10/foto6.webp",
              "/front/paletas/nox/ml10/foto7.webp"
          ]
-     },
+     },/*
      {
         id: 111,
         marca: "Nox",
@@ -121,12 +121,12 @@ const productos = [
             "/front/paletas/nox/otros/foto14.webp",
             "/front/paletas/nox/otros/foto15.webp",
         ]
-    },
+    }*/,
      {
          id: 108, 
          marca: "Nox",
          nombre: "Nox AT10 Genius 18K 24",
-         precio: 415000,
+         precio: 390000,
          tipo: "Control",
          materiales: ["Carbono 18K", "Eva HR3"],
          rugosidad: "Rough Surface",
@@ -221,7 +221,7 @@ const productos = [
         id: 112,
         marca: "Nox",
         nombre: "Nox AT10 Genius 18K 25",
-        precio: 480000,
+        precio: 470000,
         tipo: "Control",
         materiales: ["Carbono 18K", "Eva HR3"],
         rugosidad: "Rough Surface",
@@ -362,3 +362,4 @@ function inicializarModal() {
         }
     });
 }
+
