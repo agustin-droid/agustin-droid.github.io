@@ -58,12 +58,61 @@ const productos = [
         "/front/paletas/siux/beat/foto6.webp",
         "/front/paletas/siux/beat/foto7.webp"
       ]
-    },
+    },{
+  id: 708,
+  marca: "Siux",
+  nombre: "Siux Trilogy Elite 5 25",
+  precio: 370000, // estimación
+  tipo: "Control",
+  materiales: ["Carbono 12K (caras)", "Marco carbono 3K", "Goma EVA Soft / medio-blanda"],
+  rugosidad: "Mate, 3D",
+  descripcion: "Pala redonda con balance bajo, diseñada para quienes priorizan control, precisión y regularidad desde el fondo de la pista. Excelente comodidad en golpes defensivos y efectos técnicos gracias a su superficie texturada. :contentReference[oaicite:2]{index=2}",
+  imagenes: [
+   "/front/paletas/siux/elite/1.webp",
+   "/front/paletas/siux/elite/2.webp",
+   "/front/paletas/siux/elite/3.webp",
+   "/front/paletas/siux/elite/4.webp"
+  ]
+},
+    {
+  id: 707,
+  marca: "Siux",
+  nombre: "Siux Fenix Elite 5 25",
+  precio: 370000, // estimación
+  tipo: "Potencia Controlada",
+  materiales: ["Carbono 12K (caras)", "Marco carbono 3K", "Goma EVA Hard"],
+  rugosidad: "3D",
+  descripcion: "Pala de gama Elite para jugadores ofensivos avanzados, con forma diamante y balance alto. Ofrece potencia considerable sin perder demasiado control, ideal para remates y víboras. Acabado mate con textura para mejorar el efecto. :contentReference[oaicite:1]{index=1}",
+  imagenes: [
+    "/front/paletas/siux/elite/13.webp",
+        "/front/paletas/siux/elite/foto14.webp",
+        "/front/paletas/siux/elite/foto15.webp",
+        "/front/paletas/siux/elite/foto16.webp"
+  ]
+},
+
+{
+  id: 709,
+  marca: "Siux",
+  nombre: "Siux Trilogy Pro 5 25",
+  precio: 430000, // estimación
+  tipo: "Control Profesional",
+  materiales: ["Carbono 40K (caras)", "Marco carbono 3K", "Goma EVA Soft"],
+  rugosidad: "Brillo, 3D",
+  descripcion: "Pala de alto nivel orientada al control máximo. Forma redonda y balance bajo para maniobrabilidad superior. Núcleo Soft que aporta tacto medio para golpes prolongados. Ideal para jugadores tácticos que requieren precisión sin renunciar a contundencia cuando es necesario. :contentReference[oaicite:3]{index=3}",
+  imagenes: [
+    "/front/paletas/siux/pro/foto13.webp",
+    "/front/paletas/siux/pro/foto14.webp",
+    "/front/paletas/siux/pro/foto15.webp",
+    "/front/paletas/siux/pro/foto16.webp"
+
+  ]
+},
     {
       id: 704,
       marca: "Siux",
       nombre: "Siux Fenix Pro 5 25",
-      precio: 481000,
+      precio: 465000,
       tipo: "Potencia",
       materiales: ["Carbono 24K", "Eva Hard"],
       rugosidad: "3D",
@@ -77,12 +126,29 @@ const productos = [
       ]
     },
     {
+  id: 706,
+  marca: "Siux",
+  nombre: "Siux Fenix Pro 5 Black 25",
+  precio: 465000, // estimado, convertir según moneda/localidad si hace falta
+  tipo: "Potencia",
+  materiales: ["Carbono 24K (caras)", "Marco de carbono 3K", "Goma EVA Hard"],
+  rugosidad: "3D",
+  descripcion: "Pala profesional con forma de diamante y balance alto, pensada para jugadores ofensivos que buscan potencia desde la red. Acabado brillante con textura 3D que favorece el efecto. Núcleo rígido para golpes explosivos. Referente: Leo Augsburger. :contentReference[oaicite:0]{index=0}",
+  imagenes: [
+    "/front/paletas/siux/pro/foto9.webp",
+    "/front/paletas/siux/pro/foto10.webp",
+    "/front/paletas/siux/pro/foto11.webp",
+    "/front/paletas/siux/pro/foto12.webp"
+
+  ]
+},
+    {
       id: 705,
       marca: "Siux",
       nombre: "Siux Electra Pro ST4 25",
-      precio: 481000,
+      precio: 485000,
       tipo: "Potencia",
-      materiales: ["Carbono 24K", "Eva Hard"],
+      materiales: ["Carbono 15K", "Eva Hard"],
       rugosidad: "3D",
       descripcion: "Pala profesional con gran potencia y control.",
       imagenes: [
