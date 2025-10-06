@@ -1,10 +1,10 @@
 
 const productos = [
-    {
+    /*{
         id: 100,
         marca: "Nox",
         nombre: "Nox ML10 Pro Cup Rough Surface 23",
-        precio: 200000,
+        precio: 215000,
         tipo: "Control",
         materiales: ["Fibra de vidrio", "HR3 Core"],
         descripcion: "Versión con superficie rugosa de la clásica ML10 Pro Cup para mayor efecto en los golpes.",
@@ -15,7 +15,7 @@ const productos = [
             "/front/paletas/nox/ml10/foto3.webp"
 
         ]
-    },
+    },*/
     {
         id: 112,
         marca: "Nox",
@@ -51,7 +51,7 @@ const productos = [
         id: 114,
         marca: "Nox",
         nombre: "Nox Future Control 12K 25",
-        precio: 355000,
+        precio: 385000,
         tipo: "Control",
         materiales: ["Carbono 12K", "Eva HR3"],
         rugosidad: "Rough Surface",
@@ -66,7 +66,7 @@ const productos = [
         id: 115,
         marca: "Nox",
         nombre: "Nox Future Hybrid 12K 25",
-        precio: 355000,
+        precio: 385000,
         tipo: "Híbrida",
         materiales: ["Carbono 12K", "Eva HR3"],
         rugosidad: "Rough Surface",
@@ -81,7 +81,7 @@ const productos = [
         id: 116,
         marca: "Nox",
         nombre: "Nox Future Attack 12K 25",
-        precio: 355000,
+        precio: 385000,
         tipo: "Potencia",
         materiales: ["Carbono 12K", "Eva HR3"],
         rugosidad: "Rough Surface",
@@ -96,7 +96,7 @@ const productos = [
          id: 107, // Ajusta el ID según tu numeración
          marca: "Nox",
          nombre: "Nox ML10 Pro Cup Luxury 24",
-         precio: 360000, // Completa con el precio correcto
+         precio: 390000, // Completa con el precio correcto
          tipo: "Control",
          materiales: ["Carbono", "Eva HR3"],
          rugosidad: "Rough Surface", // Ajusta si es necesario
@@ -126,7 +126,7 @@ const productos = [
          id: 108, 
          marca: "Nox",
          nombre: "Nox AT10 Genius 18K 24",
-         precio: 390000,
+         precio: 395000,
          tipo: "Control",
          materiales: ["Carbono 18K", "Eva HR3"],
          rugosidad: "Rough Surface",
@@ -141,7 +141,7 @@ const productos = [
         id: 109,
         marca: "Nox",
         nombre: "Nox TL10 Quantum Cobalt 12K 25",
-        precio: 440000,
+        precio: 445000,
         tipo: "Control",
         materiales: ["Carbono 12K", "Núcleo HR3 Black Eva"],
         rugosidad: "Arenosa (Sandpaper Rough Surface)",
@@ -221,7 +221,7 @@ const productos = [
         id: 112,
         marca: "Nox",
         nombre: "Nox AT10 Genius 18K 25",
-        precio: 470000,
+        precio: 490000,
         tipo: "Control",
         materiales: ["Carbono 18K", "Eva HR3"],
         rugosidad: "Rough Surface",
@@ -362,4 +362,5 @@ function inicializarModal() {
         }
     });
 }
+
 
