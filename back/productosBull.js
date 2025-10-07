@@ -46,7 +46,7 @@ const productos = [
         id: 5,
         marca: "Bullpadel",
         nombre: "Bullpadel BP10 Evo 23",
-        precio: 190000,
+        precio: 170000,
         tipo: "Control",
         materiales: ["Fibra de vidrio", "Eva Soft"],
         rugosidad: "sin cara especial",
@@ -62,7 +62,7 @@ const productos = [
         id: 6,
         marca: "Bullpadel",
         nombre: "Bullpadel K2 Power 23",
-        precio: 190000,
+        precio: 170000,
         tipo: "Potencia",
         materiales: ["Fibra de vidrio", "Eva Soft"],
         rugosidad: "sin cara especial",
@@ -77,7 +77,7 @@ const productos = [
         id: 30,
         marca: "Bullpadel",
         nombre: "Bullpadel K2 Power 25",
-        precio: 203000,
+        precio: 213000,
         tipo: "Potencia",
         materiales: ["Fibra de vidrio", "SoftEva"],
         rugosidad: "Lisa",
@@ -91,7 +91,7 @@ const productos = [
         id: 31,
         marca: "Bullpadel",
         nombre: "Bullpadel BP10 Evo 25",
-        precio: 215000,
+        precio: 225000,
         tipo: "Control",
         materiales: ["Fibra de vidrio", "SoftEva"],
         rugosidad: "Lisa",
@@ -119,7 +119,7 @@ const productos = [
         id: 7,
         marca: "Bullpadel",
         nombre: "Bullpadel Ionic Control 23",
-        precio: 265000,
+        precio: 245000,
         tipo: "Control",
         materiales: ["Carbono", "Eva Soft"],
         rugosidad: "sin cara especial",
@@ -134,7 +134,7 @@ const productos = [
     id: 34,
     marca: "Bullpadel",
     nombre: "Bullpadel Ionic Light 25",
-    precio: 280000,
+    precio: 305000,
     tipo: "Híbrida",
     materiales: ["Carbono", "Fibrix", "Eva Soft"],
     rugosidad: "Topspin",
@@ -164,7 +164,7 @@ const productos = [
     id: 37,
     marca: "Bullpadel",
     nombre: "Bullpadel Ionic Power 25",
-    precio: 295000,
+    precio: 305000,
     tipo: "Potencia",
     materiales: ["Galphite", "Multi EVA"],
     rugosidad: "3D Grain",
@@ -181,7 +181,7 @@ const productos = [
     id: 38,
     marca: "Bullpadel",
     nombre: "Bullpadel Ionic Control 25",
-    precio: 295000,
+    precio: 305000,
     tipo: "Control",
     materiales: ["Galphite", "Multi EVA"],
     rugosidad: "3D Grain",
@@ -193,7 +193,7 @@ const productos = [
         "/front/paletas/bull/ionic 23/foto20.webp"
 
     ]
-},
+},/*
      {
         id: 2,
         marca: "Bullpadel",
@@ -224,7 +224,7 @@ const productos = [
             "/front/paletas/bull/hack 03/foto6.webp",
             "/front/paletas/bull/hack 03/foto7.webp"
         ]
-    },/*
+    },
     {
         id: 10,
         marca: "Bullpadel",
@@ -322,7 +322,7 @@ const productos = [
         id: 36,
         marca: "Bullpadel",
         nombre: "Bullpadel Neuron 25",
-        precio: 425000,
+        precio: 415000,
         tipo: "Control",
         materiales: ["Tricarbon", "Multieva", "CustomWeight"],
         rugosidad: "Top Spin",
@@ -337,7 +337,7 @@ const productos = [
         id: 23,
         marca: "Bullpadel",
         nombre: "Bullpadel Pearl TF 24",
-        precio: 435000,
+        precio: 415000,
         tipo: "Control",
         materiales: ["Fibrix", "Multieva"],
         rugosidad: "sin cara especial",
@@ -368,7 +368,7 @@ const productos = [
         id: 34,
         marca: "Bullpadel",
         nombre: "Bullpadel Hack 04 Hybrid 25",
-        precio: 490000,
+        precio: 415000,
         tipo: "Control",
         materiales: ["Fibra de vidrio", "SoftEva"],
         rugosidad: "Lisa",
@@ -378,7 +378,7 @@ const productos = [
             "/front/paletas/bull/hack 03/foto14.webp",
             "/front/paletas/bull/hack 03/foto15.webp"
         ]
-    },
+    },/*
     {
         "id": 15,
         "marca": "Bullpadel",
@@ -394,12 +394,12 @@ const productos = [
             "/front/paletas/bull/xplo/foto4.webp"
 
         ]
-    },
+    }*/,
     {
         id: 8,
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 2025",
-        precio: 515000,
+        precio: 415000,
         tipo: "Potencia",
         materiales: ["XT-Carbon 12K", "MultiEva"],
         rugosidad: "Top Spin",
@@ -415,7 +415,7 @@ const productos = [
         id: 19,
         marca: "Bullpadel",
         nombre: "Bullpadel Hack 04 TF 24",
-        precio: 530000,
+        precio: 460000,
         tipo: "Potencia",
         materiales: ["TriCarbon 18K", "Multieva"],
         rugosidad: "Rough Surface",
@@ -430,7 +430,7 @@ const productos = [
         id: 20,
         marca: "Bullpadel",
         nombre: "Bullpadel Vertex 04 TF 24",
-        precio: 530000,
+        precio: 460000,
         tipo: "Potencia",
         materiales: ["Carbono 12K", "Multieva"],
         rugosidad: "Rough Surface",
@@ -445,7 +445,7 @@ const productos = [
         id: 21,
         marca: "Bullpadel",
         nombre: "Bullpadel XPLO TF 24",
-        precio: 530000,
+        precio: 460000,
         tipo: "Control",
         materiales: ["Fibra de vidrio", "Eva Soft"],
         rugosidad: "sin cara especial",
@@ -460,7 +460,7 @@ const productos = [
         id: 22,
         marca: "Bullpadel",
         nombre: "Bullpadel Neuron TF 24",
-        precio: 530000,
+        precio: 460000,
         tipo: "Control",
         materiales: ["Carbono", "Multieva"],
         rugosidad: "Rough Surface",
@@ -600,4 +600,5 @@ function inicializarModal() {
         }
     });
 }
+
 
