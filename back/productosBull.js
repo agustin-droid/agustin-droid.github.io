@@ -119,7 +119,7 @@ const productos = [
         id: 7,
         marca: "Bullpadel",
         nombre: "Bullpadel Ionic Control 23",
-        precio: 245000,
+        precio: 285000,
         tipo: "Control",
         materiales: ["Carbono", "Eva Soft"],
         rugosidad: "sin cara especial",
@@ -301,7 +301,7 @@ const productos = [
             "/front/paletas/bull/tf/foto34.webp",
             "/front/paletas/bull/tf/foto35.webp"
         ]
-    },
+    },/*
     {
         id: 35,
         marca: "Bullpadel",
@@ -318,7 +318,7 @@ const productos = [
             "/front/paletas/bull/hack 03/foto12.webp"
 
         ]
-    },{
+    },*/{
         id: 36,
         marca: "Bullpadel",
         nombre: "Bullpadel Neuron 25",
@@ -600,5 +600,6 @@ function inicializarModal() {
         }
     });
 }
+
 
 
