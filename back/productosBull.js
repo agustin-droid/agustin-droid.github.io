@@ -1,125 +1,11 @@
-const productos = [
-    {
-    id: 33,
-    marca: "Bullpadel",
-    nombre: "Bullpadel Onyx Control Woman 25",
-    precio: 140000,
-    tipo: "Control",
-    materiales: ["Fibra de vidrio", "Eva Soft"],
-    rugosidad: "Lisa",
-    descripcion: "Ligera y cómoda, ideal para jugadoras que buscan control.",
-    imagenes: [
-        "/front/paletas/bull/otros/foto20.webp",
-        "/front/paletas/bull/otros/foto21.webp",
-        "/front/paletas/bull/otros/foto22.webp"
-    ]
-},
-    {
-        id: 28,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Indiga Power 25",
-        precio: 170000,
-        tipo: "Potencia",
-        materiales: ["Fibra de vidrio", "SoftEva"],
-        rugosidad: "Lisa",
-        descripcion: "Paleta accesible con salida de bola y potencia.",
-        imagenes: [
-            "/front/paletas/bull/indiga/foto5.webp",
-            "/front/paletas/bull/indiga/foto6.webp",
-            "/front/paletas/bull/indiga/foto7.webp"]
-    },
-    {
-        id: 29,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Indiga Woman 25",
-        precio: 170000,
-        tipo: "Control",
-        materiales: ["Fibra de vidrio", "SoftEva"],
-        rugosidad: "Lisa",
-        descripcion: "Ligera y cómoda, ideal para jugadoras iniciantes.",
-        imagenes: [
-            "/front/paletas/bull/indiga/foto1.webp",
-            "/front/paletas/bull/indiga/foto2.webp",
-            "/front/paletas/bull/indiga/foto3.webp"]
-    },
-    {
-        id: 5,
-        marca: "Bullpadel",
-        nombre: "Bullpadel BP10 Evo 23",
-        precio: 170000,
-        tipo: "Control",
-        materiales: ["Fibra de vidrio", "Eva Soft"],
-        rugosidad: "sin cara especial",
-        descripcion: "Paleta de gran manejabilidad y control, ideal para jugadores intermedios.",
-        imagenes: [
-            "/front/paletas/bull/k2 y bp10/foto1.webp",
-            "/front/paletas/bull/k2 y bp10/foto2.webp",
-            "/front/paletas/bull/k2 y bp10/foto3.webp"
 
-        ]
-    },
-    {
-        id: 6,
-        marca: "Bullpadel",
-        nombre: "Bullpadel K2 Power 23",
-        precio: 170000,
-        tipo: "Potencia",
-        materiales: ["Fibra de vidrio", "Eva Soft"],
-        rugosidad: "sin cara especial",
-        descripcion: "Paleta con forma de diamante y balance alto para máxima potencia.",
-        imagenes: [
-            "/front/paletas/bull/k2 y bp10/foto5.webp",
-            "/front/paletas/bull/k2 y bp10/foto6.webp",
-            "/front/paletas/bull/k2 y bp10/foto7.webp"
-        ]
-    },
-    {
-        id: 30,
-        marca: "Bullpadel",
-        nombre: "Bullpadel K2 Power 25",
-        precio: 213000,
-        tipo: "Potencia",
-        materiales: ["Fibra de vidrio", "SoftEva"],
-        rugosidad: "Lisa",
-        descripcion: "Potente y manejable, con forma de diamante.",
-        imagenes: [
-            "/front/paletas/bull/k2 y bp10/foto13.webp",
-            "/front/paletas/bull/k2 y bp10/foto14.webp",
-            "/front/paletas/bull/k2 y bp10/foto15.webp"]
-    },
-    {
-        id: 31,
-        marca: "Bullpadel",
-        nombre: "Bullpadel BP10 Evo 25",
-        precio: 225000,
-        tipo: "Control",
-        materiales: ["Fibra de vidrio", "SoftEva"],
-        rugosidad: "Lisa",
-        descripcion: "Equilibrada y versátil para jugadores intermedios.",
-        imagenes: [
-            "/front/paletas/bull/k2 y bp10/foto9.webp",
-            "/front/paletas/bull/k2 y bp10/foto10.webp",
-            "/front/paletas/bull/k2 y bp10/foto11.webp"]
-    },
-    {
-        id: 32,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Flow Light 25",
-        precio: 225000,
-        tipo: "Control",
-        materiales: ["Fibra de vidrio", "SoftEva"],
-        rugosidad: "Lisa",
-        descripcion: "Ligera, ideal para jugadoras que buscan control.",
-        imagenes: [
-            "/front/paletas/bull/otros/foto13.webp",
-            "/front/paletas/bull/otros/foto14.webp",
-            "/front/paletas/bull/otros/foto15.webp"]
-    },
+const productos = [
+
     {
         id: 7,
         marca: "Bullpadel",
         nombre: "Bullpadel Ionic Control 23",
-        precio: 285000,
+        precio: 255000,
         tipo: "Control",
         materiales: ["Carbono", "Eva Soft"],
         rugosidad: "sin cara especial",
@@ -130,86 +16,22 @@ const productos = [
             "/front/paletas/bull/ionic 23/foto7.webp"
         ]
     },
+
     {
-    id: 34,
-    marca: "Bullpadel",
-    nombre: "Bullpadel Ionic Light 25",
-    precio: 305000,
-    tipo: "Híbrida",
-    materiales: ["Carbono", "Fibrix", "Eva Soft"],
-    rugosidad: "Topspin",
-    descripcion: "Versátil y ligera, ideal para un juego equilibrado.",
-    imagenes: [
-        "/front/paletas/bull/ionic 23/foto9.webp",
-        "/front/paletas/bull/ionic 23/foto11.webp",
-        "/front/paletas/bull/ionic 23/foto10.webp"    ]
-}/*
-        ,{
-        id: 11,
+        id: 39,
         marca: "Bullpadel",
-        nombre: "Bullpadel Vertex 04 CMF 24",
-        precio: 340000,
-        tipo: "Potencia",
-        materiales: ["Carbono", "Eva Soft"],
-        rugosidad: "Top Spin",
-        descripcion: "Paleta con materiales de última tecnología para un mejor rendimiento.",
-        imagenes: [
-            "/front/paletas/bull/vertex 04 24/foto5.webp",
-            "/front/paletas/bull/vertex 04 24/foto6.webp",
-            "/front/paletas/bull/vertex 04 24/foto7.webp"
-        ]
-    }*/,
-    
-    {
-    id: 37,
-    marca: "Bullpadel",
-    nombre: "Bullpadel Ionic Power 25",
-    precio: 305000,
-    tipo: "Potencia",
-    materiales: ["Galphite", "Multi EVA"],
-    rugosidad: "3D Grain",
-    descripcion: "Pala con forma de diamante y balance medio-alto, orientada a jugadores que buscan un plus de potencia en el remate sin perder manejabilidad. Ofrece una buena salida de bola y sensación firme en el golpe.",
-    imagenes: [
-        "/front/paletas/bull/ionic 23/foto13.webp",
-        "/front/paletas/bull/ionic 23/foto14.webp",
-        "/front/paletas/bull/ionic 23/foto15.webp",
-        "/front/paletas/bull/ionic 23/foto16.webp"
+        nombre: "Bullpadel Icon Cloud 25",
+        precio: 330000,
+        tipo: "Polivalente – Potencia",
+        materiales: ["ElasticFiber", "Cloud EVA"],
+        rugosidad: "Lisa",
+        descripcion: "Modelo cómodo y equilibrado con excelente absorción de vibraciones y gran manejabilidad.",
+        imagenes: ["/front/paletas/bull/cluod/foto1.webp",
+            "/front/paletas/bull/cluod/foto2.webp",
+            "/front/paletas/bull/cluod/foto3.webp"]
 
-    ]
-},
-{
-    id: 38,
-    marca: "Bullpadel",
-    nombre: "Bullpadel Ionic Control 25",
-    precio: 305000,
-    tipo: "Control",
-    materiales: ["Galphite", "Multi EVA"],
-    rugosidad: "3D Grain",
-    descripcion: "Pala con forma redonda y balance bajo, enfocada en precisión y control de bola. Ideal para jugadores que buscan seguridad en la defensa y precisión en los golpes colocados, manteniendo buena manejabilidad.",
-    imagenes: [
-        "/front/paletas/bull/ionic 23/foto17.webp",
-        "/front/paletas/bull/ionic 23/foto18.webp",
-        "/front/paletas/bull/ionic 23/foto19.webp",
-        "/front/paletas/bull/ionic 23/foto20.webp"
-
-    ]
-},/*
-     {
-        id: 2,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Hack 03 23",
-        precio: 300000,
-        tipo: "Control",
-        materiales: ["Carbono", "MultiEva"],
-        rugosidad: "Top Spin",
-        descripcion: "Modelo diseñado para control con un balance medio.",
-        imagenes: [
-            "/front/paletas/bull/hack 03/foto1.jpg",
-            "/front/paletas/bull/hack 03/foto2.jpg",
-            "/front/paletas/bull/hack 03/foto3.webp"
-
-        ]
     },
+
     {
         id: 9,
         marca: "Bullpadel",
@@ -225,22 +47,7 @@ const productos = [
             "/front/paletas/bull/hack 03/foto7.webp"
         ]
     },
-    {
-        id: 10,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Vertex 04 Hybrid 24",
-        precio: 365000,
-        tipo: "Potencia",
-        materiales: ["XT-Carbon 12K", "MultiEva"],
-        rugosidad: "Top Spin",
-        descripcion: "Modelo híbrido que combina control y potencia en un mismo diseño.",
-        imagenes: [
-            "/front/paletas/bull/vertex 04 24/foto9.webp",
-            "/front/paletas/bull/vertex 04 24/foto10.webp",
-            "/front/paletas/bull/vertex 04 24/foto11.webp"
 
-        ]
-    },*/
     {
         id: 14,
         marca: "Bullpadel",
@@ -254,225 +61,102 @@ const productos = [
             "/front/paletas/bull/otros/foto5.webp",
             "/front/paletas/bull/otros/foto6.webp",
             "/front/paletas/bull/otros/foto7.webp"
-
         ]
     },
+
     {
-        id: 33,
+        id: 40,
         marca: "Bullpadel",
-        nombre: "Bullpadel Flow Woman 25",
+        nombre: "Bullpadel Vertex 05 Comfort 26",
+        precio: 370000,
+        tipo: "Potencia – Comfort",
+        materiales: ["Fibra de carbono", "MultiEVA"],
+        rugosidad: "3D Grain",
+        descripcion: "Potencia explosiva con sensación más cómoda y reducción de vibraciones.",
+        imagenes: ["/front/paletas/bull/vertex/foto1.webp",
+            "/front/paletas/bull/vertex/foto2.webp",
+            "/front/paletas/bull/vertex/foto3.webp"
+        ]
+    },
+
+    {
+        id: 41,
+        marca: "Bullpadel",
+        nombre: "Bullpadel Flow Legend 26",
         precio: 370000,
         tipo: "Potencia",
-        materiales: ["Fibra de carbono", "Multieva"],
-        rugosidad: "Top Spin",
-        descripcion: "Diseñada para jugadoras avanzadas, gran potencia.",
-        imagenes: [
-            "/front/paletas/bull/otros/foto9.webp",
-            "/front/paletas/bull/otros/foto10.webp",
-            "/front/paletas/bull/otros/foto11.webp"]
-    }
-    ,
-    {
-        id: 16, 
-        marca: "Bullpadel",
-        nombre: "Bullpadel Vertex 04 Comfort 25",
-        precio: 390000,
-        tipo: "Comfort",
-        materiales: ["Fibrix", "Multieva"],
-        rugosidad: "sin cara especial",
-        descripcion: "Paleta diseñada para ofrecer máximo confort y control en el juego.",
-        imagenes: [
-            "/front/paletas/bull/vertex 04 24/foto21.webp",
-            "/front/paletas/bull/vertex 04 24/foto22.webp",
-            "/front/paletas/bull/vertex 04 24/foto23.webp"
+        materiales: ["Fibrix", "MultiEVA"],
+        rugosidad: "3D Grain",
+        descripcion: "Modelo ofensivo con gran respuesta en ataque y buena estabilidad en defensa.",
+        imagenes: ["/front/paletas/bull/women/foto1.webp",
+            "/front/paletas/bull/women/foto2.webp",
+            "/front/paletas/bull/women/foto3.webp"
         ]
     },
-    {
-        id: 27,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Ionic Light TF 24",
-        precio: 390000,
-        tipo: "Control",
-        materiales: ["Glaphite", "Multieva"],
-        rugosidad: "Rough Surface",
-        descripcion: "Edición limitada del Tour Final. Paleta ligera con gran control y manejabilidad para jugadores que buscan precisión.",
-        imagenes: [
-            "/front/paletas/bull/tf/foto33.webp",
-            "/front/paletas/bull/tf/foto34.webp",
-            "/front/paletas/bull/tf/foto35.webp"
-        ]
-    },/*
-    {
-        id: 35,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Hack 03 24",
-        precio: 415000,
-        tipo: "Potencia",
-        materiales: ["Tricarbon", "Multieva", "CustomWeight"],
-        rugosidad: "Top Spin",
-        descripcion: "Máxima potencia con balance alto y sistema de pesos.",
-        imagenes: [
-            "/front/paletas/bull/hack 03/foto9.webp",
-            "/front/paletas/bull/hack 03/foto10.webp",
-            "/front/paletas/bull/hack 03/foto11.webp",
-            "/front/paletas/bull/hack 03/foto12.webp"
 
-        ]
-    },*/{
-        id: 36,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Neuron 25",
-        precio: 415000,
-        tipo: "Control",
-        materiales: ["Tricarbon", "Multieva", "CustomWeight"],
-        rugosidad: "Top Spin",
-        descripcion: "Control total con innovador sistema de estabilización.",
-        imagenes: [          
-            "/front/paletas/bull/otros/foto17.webp",
-            "/front/paletas/bull/otros/foto18.webp",
-            "/front/paletas/bull/otros/foto19.webp",]
-    }
-,    
     {
-        id: 23,
+        id: 42,
         marca: "Bullpadel",
-        nombre: "Bullpadel Pearl TF 24",
-        precio: 415000,
-        tipo: "Control",
-        materiales: ["Fibrix", "Multieva"],
-        rugosidad: "sin cara especial",
-        descripcion: "Edición limitada del Tour Final. Paleta ideal para jugadoras que buscan control y comodidad.",
-        imagenes: [
-            "/front/paletas/bull/tf/foto17.webp",
-            "/front/paletas/bull/tf/foto18.webp",
-            "/front/paletas/bull/tf/foto19.webp"
+        nombre: "Bullpadel Xplo Comfort 26",
+        precio: 370000,
+        tipo: "Potencia con confort",
+        materiales: ["Carbono", "MultiEVA"],
+        rugosidad: "3D Grain",
+        descripcion: "Versión más cómoda de la línea XPLO, ideal para jugadores que buscan explosividad sin rigidez excesiva.",
+        imagenes: ["/front/paletas/bull/xplo/foto5.webp",
+            "/front/paletas/bull/xplo/foto6.webp",
+            "/front/paletas/bull/xplo/foto7.webp"
         ]
-    },/*
-    {
-        id: 3,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Vertex 04 2024",
-        precio: 490000,
-        tipo: "Potencia",
-        materiales: ["XT-Carbon 12K", "MultiEva"],
-        rugosidad: "Top Spin",
-        descripcion: "Modelo diseñado para potencia con una reduccion de vibraciones.",
-        imagenes: [
-            "/front/paletas/bull/vertex 04 24/foto1.jpeg",
-            "/front/paletas/bull/vertex 04 24/foto2.webp",
-            "/front/paletas/bull/vertex 04 24/foto3.webp"
+    },
 
-        ]
-    },*/
+    {
+        id: 43,
+        marca: "Bullpadel",
+        nombre: "Bullpadel Xplo Premier 25",
+        precio: 465000,
+        tipo: "Potencia Profesional",
+        materiales: ["X-Tend Carbon", "MultiEVA"],
+        rugosidad: "3D Grain",
+        descripcion: "Versión premium orientada a jugadores avanzados que buscan máxima potencia y precisión.",
+        imagenes: ["/front/paletas/bull/xplo/foto9.webp",
+            "/front/paletas/bull/xplo/foto11.webp",
+            "/front/paletas/bull/xplo/foto12.webp"]
+    },
+
     {
         id: 34,
         marca: "Bullpadel",
         nombre: "Bullpadel Hack 04 Hybrid 25",
-        precio: 415000,
+        precio: 490000,
         tipo: "Control",
         materiales: ["Fibra de vidrio", "SoftEva"],
         rugosidad: "Lisa",
-        descripcion: "Paleta híbrida de buena maniobrabilidad.",
+        descripcion: "Paleta híbrida con buena maniobrabilidad y control.",
         imagenes: [
             "/front/paletas/bull/hack 03/foto13.webp",
             "/front/paletas/bull/hack 03/foto14.webp",
             "/front/paletas/bull/hack 03/foto15.webp"
         ]
-    },/*
-    {
-        "id": 15,
-        "marca": "Bullpadel",
-        "nombre": "Bullpadel XPLO 25",
-        "precio": 505000,
-        "tipo": "Potencia",
-        "materiales": ["Xtend-Carbon 12K", "MultiEva"],
-        "rugosidad": "3D grain",
-        "descripcion": "Modelo diseñado para jugadores avanzados que buscan máxima potencia y rendimiento.",
-        "imagenes": [
-            "/front/paletas/bull/xplo/foto1.webp",
-            "/front/paletas/bull/xplo/foto2.webp",
-            "/front/paletas/bull/xplo/foto4.webp"
+    },
 
-        ]
-    }*/,
-    {
-        id: 8,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Vertex 04 2025",
-        precio: 415000,
-        tipo: "Potencia",
-        materiales: ["XT-Carbon 12K", "MultiEva"],
-        rugosidad: "Top Spin",
-        descripcion: "Modelo de última generación diseñado para máxima potencia y reducción de vibraciones.",
-        imagenes: [
-            "/front/paletas/bull/vertex 04 24/foto13.webp",
-            "/front/paletas/bull/vertex 04 24/foto14.webp",
-            "/front/paletas/bull/vertex 04 24/foto15.webp"
 
-        ]
-    },
     {
-        id: 19,
+        id: 44,
         marca: "Bullpadel",
-        nombre: "Bullpadel Hack 04 TF 24",
-        precio: 460000,
-        tipo: "Potencia",
-        materiales: ["TriCarbon 18K", "Multieva"],
-        rugosidad: "Rough Surface",
-        descripcion: "Edición limitada del Tour Final. Paleta diseñada para jugadores ofensivos que buscan potencia.",
-        imagenes: [
-            "/front/paletas/bull/tf/foto1.webp",
-            "/front/paletas/bull/tf/foto2.webp",
-            "/front/paletas/bull/tf/foto3.webp"
-        ]
-    },
-    {
-        id: 20,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Vertex 04 TF 24",
-        precio: 460000,
-        tipo: "Potencia",
-        materiales: ["Carbono 12K", "Multieva"],
-        rugosidad: "Rough Surface",
-        descripcion: "Edición limitada del Tour Final. Paleta con balance alto y potencia explosiva.",
-        imagenes: [
-            "/front/paletas/bull/tf/foto5.webp",
-            "/front/paletas/bull/tf/foto6.webp",
-            "/front/paletas/bull/tf/foto7.webp"
-        ]
-    },
-    {
-        id: 21,
-        marca: "Bullpadel",
-        nombre: "Bullpadel XPLO TF 24",
-        precio: 460000,
-        tipo: "Control",
-        materiales: ["Fibra de vidrio", "Eva Soft"],
-        rugosidad: "sin cara especial",
-        descripcion: "Edición limitada del Tour Final. Paleta de gran control para jugadores en evolución.",
-        imagenes: [
-            "/front/paletas/bull/tf/foto9.webp",
-            "/front/paletas/bull/tf/foto10.webp",
-            "/front/paletas/bull/tf/foto11.webp"
-        ]
-    },
-    {
-        id: 22,
-        marca: "Bullpadel",
-        nombre: "Bullpadel Neuron TF 24",
-        precio: 460000,
-        tipo: "Control",
-        materiales: ["Carbono", "Multieva"],
-        rugosidad: "Rough Surface",
-        descripcion: "Edición limitada del Tour Final. Paleta innovadora con excelente estabilidad y control.",
-        imagenes: [
-            "/front/paletas/bull/tf/foto13.webp",
-            "/front/paletas/bull/tf/foto14.webp",
-            "/front/paletas/bull/tf/foto15.webp"
+        nombre: "Bullpadel Neuron 02 Edge 26",
+        precio: 515000,
+        tipo: "Control – Precisión",
+        materiales: ["X-Tend Carbon 3K", "MultiEVA"],
+        rugosidad: "3D Grain",
+        descripcion: "Modelo orientado al control absoluto con excelente estabilidad estructural.",
+        imagenes: ["/front/paletas/bull/neuron/foto1.webp",
+            "/front/paletas/bull/neuron/foto2.webp",
+            "/front/paletas/bull/neuron/foto3.webp"
         ]
     }
-    
+
 ];
+
 
 document.addEventListener("DOMContentLoaded", function () {
     mostrarProductos("Bullpadel");
@@ -600,6 +284,3 @@ function inicializarModal() {
         }
     });
 }
-
-
-
