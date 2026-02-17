@@ -1,17 +1,6 @@
 const productos = [
    
-    {
-        id: 907,
-        marca: "Bullpadel",
-        nombre: "Bolso Bullpadel Tour Azul Marino",
-        precio: 90000,
-        tipo: "bolso",
-        descripcion: "El bolso Bullpadel Tour Azul Marino combina funcionalidad y diseño elegante para transportar todo lo necesario a la cancha con estilo.",
-        imagenes: [
-            "/front/paletas/bolsos/foto29.webp",
-            "/front/paletas/bolsos/foto30.webp"
-                ]
-    },
+
     {
         id: 912,
         marca: "Varlion",
@@ -74,26 +63,13 @@ const productos = [
         id: 909,
         marca: "Bullpadel",
         nombre: "Bolso Bullpadel Performance Ciruela",
-        precio: 135000,
+        precio: 145000,
         tipo: "bolso",
         descripcion: "Diseñado para el rendimiento, el bolso Bullpadel Performance Ciruela destaca por su durabilidad, amplio espacio y estilo moderno.",
         imagenes: [
             "/front/paletas/bolsos/foto37.webp",
             "/front/paletas/bolsos/foto38.webp",
             "/front/paletas/bolsos/foto39.webp"
-        ]
-    },
-    {
-        id: 913,
-        marca: "Bullpadel",
-        nombre: "Bolso Bullpadel Ionic Negro",
-        precio: 140000,
-        tipo: "bolso",
-        descripcion: "Diseño funcional con amplio espacio interior, ideal para transportar tu equipamiento deportivo.",
-        imagenes: [
-            "/front/paletas/bolsos/foto53.webp",
-            "/front/paletas/bolsos/foto54.webp",
-            "/front/paletas/bolsos/foto55.webp"
         ]
     },
     {
@@ -129,7 +105,7 @@ const productos = [
     id: 911,
     marca: "Bullpadel",
     nombre: "Bolso Bullpadel Casual Negro",
-    precio: 155000,
+    precio: 170000,
     tipo: "bolso",
     descripcion: "Con un diseño urbano y elegante, el bolso Bullpadel Casual Negro se adapta tanto a la cancha como al día a día.",
     imagenes: [
@@ -137,7 +113,7 @@ const productos = [
         "/front/paletas/bolsos/foto46.webp",
         "/front/paletas/bolsos/foto47.webp"
     ]
-},
+}/*,
 {
     id: 916,
     marca: "Bullpadel",
@@ -166,13 +142,13 @@ const productos = [
             "/front/paletas/bolsos/foto34.webp",
             "/front/paletas/bolsos/foto35.webp"
         ]
-    },
+    }*/,
     
     {
         id: 906,
         marca: "Bullpadel",
         nombre: "Bolso Bullpadel Next Bag Naranja",
-        precio: 172000,
+        precio: 170000,
         tipo: "bolso",
         descripcion: "El bolso Bullpadel Next Bag Naranja de Bullpadel ofrece gran capacidad y resistencia, ideal para jugadores exigentes que buscan rendimiento y estilo.",
         imagenes: [
@@ -180,11 +156,23 @@ const productos = [
             "/front/paletas/bolsos/foto26.webp"
         ]
     },
+   {
+        id: 903,
+        marca: "Varlion",
+        nombre: "Bolso Varlion Ambassadors Mike Yanguas",
+        precio: 205000,
+        tipo: "bolso",
+        descripcion: "El bolso Bolso Varlion Ambassadors Mike Yanguas de Varlion ofrece estilo, comodidad y funcionalidad para el día a día.",
+        imagenes: [
+            "/front/paletas/bolsos/foto9.webp",
+            "/front/paletas/bolsos/foto10.webp"
+        ]
+    },
     {
         id: 915,
         marca: "Bullpadel",
         nombre: "Bolso Bullpadel Vertex Piedra",
-        precio: 190000,
+        precio: 215000,
         tipo: "bolso",
         descripcion: "Con gran capacidad y diseño moderno, este bolso es ideal para jugadores exigentes.",
         imagenes: [
@@ -196,31 +184,7 @@ const productos = [
         ]
     }
     ,
-    {
-        id: 903,
-        marca: "Varlion",
-        nombre: "Bolso Varlion Ambassadors Mike Yanguas",
-        precio: 190000,
-        tipo: "bolso",
-        descripcion: "El bolso Bolso Varlion Ambassadors Mike Yanguas de Varlion ofrece estilo, comodidad y funcionalidad para el día a día.",
-        imagenes: [
-            "/front/paletas/bolsos/foto9.webp",
-            "/front/paletas/bolsos/foto10.webp"
-        ]
-    },
-    {
-        id: 910,
-        marca: "Bullpadel",
-        nombre: "Bolso Bullpadel Hack Blanco",
-        precio: 200000,
-        tipo: "bolso",
-        descripcion: "El bolso Bullpadel Hack Blanco es ideal para los jugadores más exigentes, ofreciendo capacidad, resistencia y un diseño impactante.",
-        imagenes: [
-            "/front/paletas/bolsos/foto43.webp",
-            "/front/paletas/bolsos/foto41.webp",
-            "/front/paletas/bolsos/foto42.webp"
-        ]
-    },
+    
     {
         id: 904,
         marca: "Head",
@@ -368,6 +332,7 @@ function inicializarModal(productosFiltrados) {
         }
     });
 }
+
 
 
 
